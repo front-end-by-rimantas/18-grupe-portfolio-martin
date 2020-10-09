@@ -1,6 +1,26 @@
 body {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas:
+        "head head head"
+        "aside feed asideb";
+}
+
+body>header {
+    grid-area: head;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.asideb {
+    grid-area: asideb;
+}
+
+main {
+    grid-area: feed;
+    padding: 40px;
 }
 
 .container-fluid {
@@ -10,13 +30,16 @@ body {
     .container-fluid > .row {
         grid-column: 1 / 2;
     }
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1200px 1fr;
 }
-    .container > .row {
-        grid-column: 2 / 3;
-    }
+
+
+
+
+
 
 @media (max-width: 1300px) {
     .container {
