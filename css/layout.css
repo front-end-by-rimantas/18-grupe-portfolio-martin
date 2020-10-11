@@ -1,12 +1,12 @@
 body {
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 200px 1fr 200px;
     grid-template-areas:
         "head head head"
         "aside feed asideb";
 }
 
-body>header {
+body > header {
     grid-area: head;
 }
 
@@ -16,29 +16,31 @@ body>header {
 
 .asideb {
     grid-area: asideb;
+
 }
 
 main {
     grid-area: feed;
-    padding: 40px;
+    /* padding: 40px; */
+
 }
 
-.container-fluid {
+/* .container-fluid {
     display: grid;
     grid-template-columns: 1fr;
+
 }
     .container-fluid > .row {
         grid-column: 1 / 2;
-    }
+    } */
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1200px 1fr;
+    /* display: grid; */
+    display: inline-block;
+    width: 100%;
+    /* grid-template-columns: 1fr 1200px 1fr; */
+
 }
-
-
-
-
 
 
 @media (max-width: 1300px) {
