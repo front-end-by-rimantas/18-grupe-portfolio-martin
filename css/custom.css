@@ -175,9 +175,16 @@
    :first-of-type .portfolioMenu {
       text-align: right;
 } 
-.portfolioG3 {
-  display: inline-block;
+.box{
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #ffffff;
   width: 33%;
+  display: inline-block;
+}
+.portfolioG3 {
+ max-width: 100%;
+
 }
  
  
