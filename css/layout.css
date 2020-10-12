@@ -12,11 +12,11 @@ body > header {
 
 .aside {
     grid-area: aside;
+    background-color: yellow;
 }
 
 .asideb {
     grid-area: asideb;
-
 }
 
 main {
