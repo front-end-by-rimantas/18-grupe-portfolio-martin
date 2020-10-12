@@ -147,7 +147,7 @@
     font-size: 35px;
 }
 .half-a-border-on-bottom {
-    border-bottom:3px solid white;
+    border-bottom:3px solid #FFFFFF;
     position: relative;
   }
   .half-a-border-on-bottom:after {
