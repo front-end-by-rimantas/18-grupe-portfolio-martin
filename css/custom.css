@@ -4,30 +4,15 @@
 
 /* <----- about me -----> */
 .portfolioPic {
-  background-image: url(../img/avtar-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
   height: 425px;
-  width: 425px;
+  max-width: 100%;
   border: solid 10px #ffffff;
   border-radius: 5px;
   vertical-align: middle;
   box-shadow: -1px 0px 6px 4px rgba(0, 0, 0, 0.1);
 }
-
-.aboutMe-container {
-  display: inline-block;
-  width: 100%;
-  background-color: #fafbfb;
-}
-
-.row-aboutMe {
-  display: inline-block;
-  width: 100%;
-  background-color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.container-aboutMe {
+  background: #FFFFFF;
 }
 
 .aboutMe-right-column {
@@ -42,6 +27,7 @@
   float: left;
   width: 60%;
   padding-left: 50px;
+  text-align: left;
 }
 
 .aboutMe-title {
@@ -70,21 +56,14 @@
   padding: 0px 20px 20px 0px;
 }
 
-.aboutMe-first-paragraph {
+.aboutMe-paragraph {
   font-size: 16px;
   color: #82828a;
   padding: 0 0 20px 0px;
-  font-family: "Poppins", sans-serif;
-  line-height: 20px;
+  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  line-height: 1.6;
 }
 
-.aboutMe-second-paragraph {
-  font-size: 16px;
-  color: #82828a;
-  padding: 0 0 20px 0px;
-  font-family: "Poppins", sans-serif;
-  line-height: 20px;
-}
 
 .aboutMe-socials {
   display: flex;
