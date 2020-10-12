@@ -6,7 +6,7 @@ body {
         "aside feed asideb";
 }
 
-body>header {
+body > header {
     grid-area: head;
 }
 
@@ -17,17 +17,18 @@ body>header {
 
 .asideb {
     grid-area: asideb;
-    background-color: yellow;
 }
 
 main {
     grid-area: feed;
-    padding: 40px;
+    /* padding: 40px; */
+
 }
 
 .container-fluid {
     display: grid;
     grid-template-columns: 1fr;
+
 }
     .container-fluid > .row {
         grid-column: 1 / 2;
@@ -35,13 +36,10 @@ main {
 
 .container {
     display: grid;
-    text-align: center;
+    width: 100%;
     margin-top: 100px;
+
 }
-
-
-
-
 
 
 @media (max-width: 1300px) {
