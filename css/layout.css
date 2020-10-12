@@ -1,5 +1,6 @@
 body {
   background-color: #f3f3f3;
+  margin-top: 80px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:

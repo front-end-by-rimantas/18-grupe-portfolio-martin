@@ -9,7 +9,7 @@ header {
   left: 0;
   z-index: 100;
   position: fixed;
-  transition: all 0.5s ease;
+  transition: 0.2s;
   background-color: transparent;
   border-bottom: 1px solid  rgb(243, 239, 239);
 }
@@ -33,6 +33,10 @@ header {
   line-height: 32px;
 
 }
+.active .logo > a{
+ color: red;
+
+}
 .nav {
   display: inline-block;
   float: right;
@@ -46,6 +50,9 @@ header {
   padding-left: 20px;
 }
 
+.active .menu-main-h > a {
+  color: #000;
+}
 .menu-main-h {
   display: block;
   float: left;
@@ -57,7 +64,7 @@ header {
   background: #fff;
   padding-top: 10px;
   padding-bottom: 10px; 
-  position: relative; 
+  position: fixed; 
   width: 100%; 
   float: left;
   
