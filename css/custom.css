@@ -136,6 +136,68 @@
 
 /* <----- my services -----> */
 
+.container-services {
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+@media (max-width: 700px) {
+    .container-services {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  } 
+
+.card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 4;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border: solid 5px rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.1);
+}
+
+@keyframes hover{
+    from {transform: translatey(0px);}
+    to {transform: translatey(-10px);}
+
+}
+
+.card:hover {
+    border: solid 5px rgb(255, 40, 40);
+    transition-duration: 0.9s;
+    animation: hover 0.3s ease-out forwards;
+}
+
+.container-services .fas {
+    font-size: 60px;
+    color: rgb(255, 40, 40);
+}
+
+.card-heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.card-p {
+    font-weight: lighter;
+    font-size: 18px;
+    color: #82828a;
+
+}
+
+
 /* <----- my resume -----> */
 
 /* <----- hire me -----> */
