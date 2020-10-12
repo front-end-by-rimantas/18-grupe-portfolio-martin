@@ -175,6 +175,10 @@
    :first-of-type .portfolioMenu {
       text-align: right;
 } 
+.portfolioG3 {
+  display: inline-block;
+  width: 33%;
+}
  
  
 
