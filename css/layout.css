@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 1fr 1200px 1fr;
     grid-template-areas:
         "head head head"
         "aside feed asideb";
@@ -25,20 +25,19 @@ main {
 
 }
 
-/* .container-fluid {
+.container-fluid {
     display: grid;
     grid-template-columns: 1fr;
 
 }
     .container-fluid > .row {
         grid-column: 1 / 2;
-    } */
+    }
 
 .container {
-    /* display: grid; */
-    display: inline-block;
+    display: grid;
     width: 100%;
-    /* grid-template-columns: 1fr 1200px 1fr; */
+    margin-top: 100px;
 
 }
 
