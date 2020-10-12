@@ -161,6 +161,9 @@
     bottom:-3px;
   }
   /* .container > .row >  */
+  .list {
+    
+  }
      .portfolioMenu {
         display: inline-block;
         text-align: center;
@@ -169,7 +172,7 @@
         line-height: normal;
         width: 10%;
         margin-top: 50px;
-        margin-botom: 20px;
+        margin-bottom: 20px;
         font-weight: 600;
   }
    :first-of-type .portfolioMenu {
