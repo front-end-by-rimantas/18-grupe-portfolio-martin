@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 1fr 1200px 1fr;
     grid-template-areas:
         "head head head"
         "aside feed asideb";
@@ -12,10 +12,12 @@ body>header {
 
 .aside {
     grid-area: aside;
+    background-color: yellow;
 }
 
 .asideb {
     grid-area: asideb;
+    background-color: yellow;
 }
 
 main {
@@ -33,7 +35,8 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1200px 1fr;
+    text-align: center;
+    margin-top: 100px;
 }
 
 
