@@ -1,6 +1,28 @@
 body {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-areas:
+        "head head head"
+        "aside feed asideb";
+}
+
+body>header {
+    grid-area: head;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: yellow;
+}
+
+.asideb {
+    grid-area: asideb;
+    background-color: yellow;
+}
+
+main {
+    grid-area: feed;
+    padding: 40px;
 }
 
 .container-fluid {
@@ -10,13 +32,17 @@ body {
     .container-fluid > .row {
         grid-column: 1 / 2;
     }
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 1200px 1fr;
+    text-align: center;
+    margin-top: 100px;
 }
-    .container > .row {
-        grid-column: 2 / 3;
-    }
+
+
+
+
+
 
 @media (max-width: 1300px) {
     .container {
