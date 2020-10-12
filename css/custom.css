@@ -4,145 +4,135 @@
 
 /* <----- about me -----> */
 .portfolioPic {
-    background-image: url(../img/avtar-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    height: 425px;
-    width: 425px;
-    border: solid 10px #ffffff;
-    border-radius: 5px;
-    vertical-align: middle;
-    box-shadow: -1px 0px 6px 4px rgba(0, 0, 0, 0.1);
-
+  background-image: url(../img/avtar-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 425px;
+  width: 425px;
+  border: solid 10px #ffffff;
+  border-radius: 5px;
+  vertical-align: middle;
+  box-shadow: -1px 0px 6px 4px rgba(0, 0, 0, 0.1);
 }
 
- .aboutMe-comtainer {
-    display: inline-block;
-    width: 100%;
-    background-color: #FAFBFB;
-
+.aboutMe-container {
+  display: inline-block;
+  width: 100%;
+  background-color: #fafbfb;
 }
 
 .row-aboutMe {
-    display: inline-block;
-    width: 100%;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-} 
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 .aboutMe-right-column {
-    display: inline-block;
-    float: left;
-    width: 40%;
-    box-shadow: 3px #82828A;
+  display: inline-block;
+  float: left;
+  width: 40%;
+  box-shadow: 3px #82828a;
 }
-
 
 .aboutMe-left-column {
-    display: inline-block;
-    float: left;
-    width: 60%;
-    padding-left: 50px;
-
+  display: inline-block;
+  float: left;
+  width: 60%;
+  padding-left: 50px;
 }
 
-.aboutMe-title {  
+.aboutMe-title {
   font-size: 32px;
   padding: 20px 20px 20px 0px;
   margin-left: 0px;
   position: relative;
 }
 
-.aboutMe-title::after{
-    content: "";
-    position: absolute;
-    background: black;
-    width: 60px;
-    height: 3px;
-    bottom: 11px;
-    left: 0;
+.aboutMe-title::after {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 60px;
+  height: 3px;
+  bottom: 11px;
+  left: 0;
 }
 
 .aboutMe-me {
-    color: red;
+  color: red;
 }
 
-
 .aboutMe-hello {
- font-size: 20px;
- padding: 0px 20px 20px 0px;
+  font-size: 20px;
+  padding: 0px 20px 20px 0px;
 }
 
 .aboutMe-first-paragraph {
-font-size: 16px;
-color: #82828A;
-padding: 0 0 20px 0px;
-font-family: "Poppins", sans-serif;
-line-height: 20px;
+  font-size: 16px;
+  color: #82828a;
+  padding: 0 0 20px 0px;
+  font-family: "Poppins", sans-serif;
+  line-height: 20px;
 }
 
 .aboutMe-second-paragraph {
-    font-size: 16px;
-    color: #82828A;
-    padding: 0 0 20px 0px;
-    font-family: "Poppins", sans-serif;
-    line-height: 20px;
+  font-size: 16px;
+  color: #82828a;
+  padding: 0 0 20px 0px;
+  font-family: "Poppins", sans-serif;
+  line-height: 20px;
 }
 
 .aboutMe-socials {
-    display: flex;
-    width: 100%;
-    float: left;
-    /* background-color: orange; */
-    border-bottom: 1px solid #ffffff;
-    text-align: center;
-    margin-bottom: 5px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 0;
-    margin-left: 0 ;
+  display: flex;
+  width: 100%;
+  float: left;
+  /* background-color: orange; */
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  margin-left: 0;
 }
-
 
 .aboutMe-socials > a {
-    padding: 10px;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    line-height: 20px;
-    height: 40px;
-    margin: 3px;
-    width: 40px;
-    border-radius: 4px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  line-height: 20px;
+  height: 40px;
+  margin: 3px;
+  width: 40px;
+  border-radius: 4px;
 }
 .aboutMe-socials > a:hover {
-    padding: 10px;
-    text-decoration: none;
-    line-height: 20px;
-    height: 40px;
-    margin: 3px;
-    width: 40px;
-    border-radius: 4px;
-    background-color:white;
-    color: black;
-    border: 1px solid black;
+  padding: 10px;
+  text-decoration: none;
+  line-height: 20px;
+  height: 40px;
+  margin: 3px;
+  width: 40px;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .aboutMe-button {
-display: flex;
-width: 100%;
-float: left;
+  display: flex;
+  width: 100%;
+  float: left;
 }
-
 
 .btn-downloadCV {
-    margin-left: 10px;
+  margin-left: 10px;
 }
-
-
 
 /* <----- my services -----> */
 
