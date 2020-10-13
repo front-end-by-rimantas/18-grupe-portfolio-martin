@@ -2,15 +2,16 @@
 .btn {
     display: inline-block;
     background-color: #f34236;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
     color: rgb(238, 238, 238);
     border-radius: 3px;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-decoration: none;
     margin: 5px;
     transition-duration: 0.4s;
@@ -32,16 +33,17 @@
 
 .btn2 {
     display: inline-block;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
     border: 1px solid  rgb(238, 238, 238);
     color:   #f34236;
     background-color:  rgb(238, 238, 238);
     border-radius: 3px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-decoration: none;
     margin: 5px;
     transition-duration: 0.4s;
