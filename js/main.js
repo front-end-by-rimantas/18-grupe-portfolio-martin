@@ -5,6 +5,7 @@
 /* <----- header -----> */
 const burgerDOM = document.querySelector('header .mob-menu-icon');
     const menuDOM = document.querySelector('body .menu');
+    const hedDOM = document.querySelector('.header');
     //
     burgerDOM.addEventListener('click', () => {
         //susirandame artimiausia tevini elementa div
