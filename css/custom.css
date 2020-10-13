@@ -1,5 +1,183 @@
 /* <----- header -----> */
 
+header {
+  display: grid;
+  width: 100%;
+  background: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  transition: 0.2s;
+  background-color: transparent;
+  border-bottom: 1px solid  rgb(243, 239, 239);
+}
+.hed{
+
+  line-height: 60px;
+}
+.active{
+  background-color: #fff;
+}
+.logo {
+  display: inline-block;
+  float: left;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+
+}
+.logo > a{
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  
+  line-height: 60px;
+
+}
+.active .logo > a{
+ color: red;
+
+}
+.nav {
+  display: inline-block;
+  float: right;
+  
+}
+.progress-bar{
+  display: inline-block;
+}
+.link{
+  line-height: 60px;
+}
+.link:hover {
+}
+
+.bar{
+
+  height: 3px;
+  background-color: red;
+  animation-name: loading;
+  animation-duration: 2s;
+}
+@keyframes loading {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+.menu-main-h > a {
+
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  padding-left: 20px;
+}
+
+.active .menu-main-h > a {
+  color: #000;
+}
+.menu-main-h {
+  display: block;
+  float: left;
+  position: relative; 
+  margin-top: 9px;
+}
+.show  > .menu-mob-h{
+  display: block;
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  position: fixed; 
+  width: 100%; 
+  float: left;
+  
+}
+
+.show  > .menu-mob-h > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #000;
+  font-weight: 600;
+  padding: 15px;
+  border-bottom: 1px solid rgb(243, 239, 239);
+  text-align: left;
+ /* outline: 5px auto -webkit-focus-ring-color;*/
+}
+.show  > .menu-mob-h > a:last-of-type{
+  border-bottom: none;
+  margin-bottom: -10px;
+}
+
+.menu-mob-h{
+  display: none;
+  background:#c4c4c4;
+  position: relative; 
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  position: relative;
+  width: 100%; 
+  z-index: 1;
+}
+
+
+.mob-menu-ico-h {
+  display: none; 
+  background:transparent; 
+  float: right;
+  position: relative; 
+  margin-top: 5px;
+}
+
+.mob-menu-icon {
+  display: block; 
+  width: 40px; 
+  height: 40px; 
+  position: relative; 
+  padding:10px; 
+  float: right;
+  cursor: pointer;
+  background-color: #f34236;
+  color: #fff;
+  margin-top: 5px;
+}
+.mob-menu-icon:focus {
+
+  outline: 5px auto -webkit-focus-ring-color;
+ }
+
+.menu-ico-str {
+  display: block; 
+  float: left; 
+  position: relative; 
+  width: 25px; 
+  height: 2px; 
+  background-color:#fff; 
+  margin-bottom: 2px; 
+  margin-top: 3px; 
+  border-radius: 2px;
+  text-align: center;
+  margin-left: -2px;
+}
+
+.menu-mob-h a {
+  display: block; 
+  width: 100%; 
+  padding:5px; 
+  text-align: center;
+}
+@media only screen and (max-width : 990px) {
+  .menu-main-h {display: none; height: auto;}
+  .mob-menu-ico-h {display: block;}
+}
+
 /* <----- hero -----> */
 
 /* <----- about me -----> */
