@@ -3,7 +3,6 @@
 header {
   display: grid;
   width: 100%;
-  padding: 20px;
   background: none;
   top: 0;
   left: 0;
@@ -13,24 +12,29 @@ header {
   background-color: transparent;
   border-bottom: 1px solid  rgb(243, 239, 239);
 }
+.hed{
+
+  line-height: 60px;
+}
 .active{
   background-color: #fff;
 }
 .logo {
   display: inline-block;
   float: left;
-  height: 40px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: left;
+
 }
 .logo > a{
   text-decoration: none;
   color: #000;
   font-size: 22px;
   font-weight: 600;
-  line-height: 32px;
+  
+  line-height: 60px;
 
 }
 .active .logo > a{
@@ -40,7 +44,33 @@ header {
 .nav {
   display: inline-block;
   float: right;
+  
 }
+.progress-bar{
+  display: inline-block;
+}
+.link{
+  line-height: 60px;
+}
+.link:hover {
+}
+
+.bar{
+
+  height: 3px;
+  background-color: red;
+  animation-name: loading;
+  animation-duration: 2s;
+}
+@keyframes loading {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
 .menu-main-h > a {
 
   text-align: right;
@@ -94,6 +124,7 @@ header {
   padding-bottom: 10px; 
   position: relative;
   width: 100%; 
+  z-index: 1;
 }
 
 
@@ -115,7 +146,7 @@ header {
   cursor: pointer;
   background-color: #f34236;
   color: #fff;
-  margin-top: -5px;
+  margin-top: 5px;
 }
 .mob-menu-icon:focus {
 
