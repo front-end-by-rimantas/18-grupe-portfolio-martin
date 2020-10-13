@@ -12,25 +12,15 @@ header {
   background-color: transparent;
   border-bottom: 1px solid  rgb(243, 239, 239);
 }
-.show .active > .header{
-  box-shadow: none;
-} 
 
-
-
-.active{
-  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px, rgba(58, 78, 95, 0.05) 0 -5px 16px;
-}
-.active .show{
-  box-shadow: none;
-} 
 
 .hed{
 
-  line-height: 60px;
+  line-height: 70px;
 }
 .active{
   background-color: #fff;
+  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px, rgba(58, 78, 95, 0.05) 0 -5px 16px;
 }
 .logo {
   display: inline-block;
@@ -46,8 +36,8 @@ header {
   color: #000;
   font-size: 22px;
   font-weight: 600;
-  
-  line-height: 60px;
+  padding: 0 !important;
+  line-height: 70px;
 
 }
 .active .logo > a{
@@ -61,19 +51,24 @@ header {
 }
 .progress-bar{
   display: inline-block;
+  margin-top: -5px;
 }
 .link{
-  line-height: 60px;
+  line-height: 70px;
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  padding-left: 20px;
 }
-.link:hover {
-}
+
 
 .bar{
 
   height: 3px;
   background-color: red;
   animation-name: loading;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 @keyframes loading {
   0% {
@@ -81,6 +76,23 @@ header {
   }
   100% {
       width: 100%;
+  }
+}
+.barafter{
+
+  height: 3px;
+  width: 0%;
+  margin-left: auto;
+  background-color: red;
+  animation-name: loading1;
+  animation-duration: 0.5s;
+}
+@keyframes loading1 {
+  0% {
+      width: 100%;
+  }
+  100% {
+      width: 0%;
   }
 }
 
@@ -93,7 +105,7 @@ header {
   padding-left: 20px;
 }
 
-.active .menu-main-h > a {
+.active .menu-main-h > .progress-bar > .link {
   color: #000;
 }
 .menu-main-h {
@@ -105,7 +117,6 @@ header {
 .show  > .menu-mob-h{
   display: block;
   background: #fff;
-  padding-top: 10px;
   padding-bottom: 10px; 
   position: fixed; 
   width: 100%; 
@@ -120,7 +131,7 @@ header {
   font-size: 13px;
   color: #000;
   font-weight: 600;
-  padding: 15px;
+  line-height: 40px;
   border-bottom: 1px solid rgb(243, 239, 239);
   text-align: left;
  /* outline: 5px auto -webkit-focus-ring-color;*/
@@ -134,7 +145,6 @@ header {
   display: none;
   background:#c4c4c4;
   position: relative; 
-  padding-top: 10px;
   padding-bottom: 10px; 
   position: relative;
   width: 100%; 
@@ -147,7 +157,7 @@ header {
   background:transparent; 
   float: right;
   position: relative; 
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .mob-menu-icon {
@@ -162,11 +172,11 @@ header {
   color: #fff;
   margin-top: 5px;
 }
-.mob-menu-icon:focus {
 
-  outline: 5px auto -webkit-focus-ring-color;
- }
-
+.new{
+  border: 2px solid blue;
+  border-radius: 3px;
+}
 .menu-ico-str {
   display: block; 
   float: left; 
@@ -180,13 +190,24 @@ header {
   text-align: center;
   margin-left: -2px;
 }
+.new > .menu-ico-str {
+  margin-top: 2px; 
+  margin-left: -4px;
+}
 
 .menu-mob-h a {
   display: block; 
   width: 100%; 
-  padding:5px; 
   text-align: center;
 }
+
+/*.menu-mob-h > .home-menu{
+  border: 1px solid rgb(243, 239, 239);;
+  height: 50px;
+  width: 50px;
+  margin-bottom: -40px;
+  margin-left: 100px;
+}*/
 @media only screen and (max-width : 990px) {
   .menu-main-h {display: none; height: auto;}
   .mob-menu-ico-h {display: block;}

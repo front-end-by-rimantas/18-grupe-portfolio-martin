@@ -1,16 +1,13 @@
-// header import
-// hero import
-// about import
 
 /* <----- header -----> */
 const burgerDOM = document.querySelector('header .mob-menu-icon');
     const menuDOM = document.querySelector('body .menu');
-    const hedDOM = document.querySelector('.header');
     //
     burgerDOM.addEventListener('click', () => {
         //susirandame artimiausia tevini elementa div
   
             menuDOM.classList.toggle('show');
+            burgerDOM.classList.add('new');
     
     //jeigu buvo paspausta yra true, o jeigu true tuomet remove show
     
@@ -26,6 +23,40 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
         }
     };
 
+
+/* uzdedamas progress bar ant meniu */
+  
+ /*   function bar(){
+        const pbDOM = document.querySelectorAll('header .link');
+        const barDOM = document.querySelector('body .pb');
+        for (let i=0; i < pbDOM.lenght; i++)
+        {   const allpb = pbDOM[i];
+            console.log('pbDOM[i]');
+            allpb.addEventListener('pointerenter', () => {
+                barDOM.classList.remove('barafter'); 
+                    barDOM.classList.add('bar'); 
+            });
+            
+            allpb.addEventListener('pointerleave', () => {
+                barDOM.classList.remove('bar'); 
+                barDOM.classList.add('barafter'); 
+            })
+        }
+    };*/
+    const pbDOM = document.querySelector('header .link');
+    const barDOM = document.querySelector('body .pb');
+
+    pbDOM.addEventListener('pointerenter', () => {
+        barDOM.classList.remove('barafter'); 
+            barDOM.classList.add('bar'); 
+    });
+    
+    pbDOM.addEventListener('pointerleave', () => {
+        barDOM.classList.remove('bar'); 
+        barDOM.classList.add('barafter'); 
+    });
+
+/* burger button pasikeitimai */
 
 
 
