@@ -132,7 +132,6 @@
     position: relative;
   }
   .half-a-border-on-bottom:after {
-    /* padding:0;margin:0;display:block;probably not really needed? */
     content: "";
     width:40%;
     height:3px;
@@ -141,8 +140,7 @@
     right: 75px;
     bottom:-3px;
   }
-  /* .container > .row >  */
-  .list {
+   .list {
     
   }
      .portfolioMenu {
@@ -168,7 +166,6 @@
 }
 .portfolioG3 {
  max-width: 100%;
-
 }
  
  
