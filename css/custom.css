@@ -3,6 +3,11 @@
 /* <----- hero -----> */
 
 /* <----- about me -----> */
+
+.container-aboutMe {
+  background: #FFFFFF;
+}
+
 .portfolioPic {
   height: 425px;
   max-width: 100%;
@@ -10,9 +15,6 @@
   border-radius: 5px;
   vertical-align: middle;
   box-shadow: -1px 0px 6px 4px rgba(0, 0, 0, 0.1);
-}
-.container-aboutMe {
-  background: #FFFFFF;
 }
 
 .aboutMe-right-column {
@@ -74,7 +76,7 @@
   text-align: center;
   margin-bottom: 5px;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-left: 0;
   margin-left: 0;
 }
