@@ -29,9 +29,6 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
     });
 //izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
     bodyDOM.addEventListener('click', () => {
-        //susirandame artimiausia tevini elementa div
-
-         
         burgerDOM.classList.remove('new');
     
     });
