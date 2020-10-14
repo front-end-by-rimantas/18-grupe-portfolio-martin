@@ -108,5 +108,5 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
 //import ajax from './ajax.js';
 
 //ajax(portfolioGallery, '/js/data.json');
-const { rez } = resume;
-console.log(renderResume('.resume .resume-grid',rez));
+
+console.log(renderResume('.resume .resume-grid',resume));
