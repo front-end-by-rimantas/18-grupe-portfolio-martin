@@ -1,4 +1,9 @@
 // header import
+import header from '../js/data/header.js';
+//header rendering function
+import { renderMeniu } from '../js/components/header/renderMeniu.js';
+import { renderMobMeniu } from '../js/components/header/renderMobMeniu.js';
+
 // hero import
 // about import
 
@@ -109,4 +114,6 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
 
 //ajax(portfolioGallery, '/js/data.json');
 
-console.log(renderResume('.resume .resume-grid',resume));
+renderResume('.resume .resume-grid',resume);
+renderMeniu('.header .menu-main-h',header);
+renderMobMeniu('body .menu-mob-h',header);
