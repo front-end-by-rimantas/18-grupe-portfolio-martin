@@ -2,7 +2,7 @@
 // hero import
 // about import
 //portfolio import
-import portfolioGallery from './portfolioGallery.js';
+//import portfolioGallery from './portfolioGallery.js';
 
 /* <----- header -----> */
 const burgerDOM = document.querySelector('header .mob-menu-icon');
@@ -100,6 +100,6 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
 // hero logic
 // about logic
 //portfolio logic
-import ajax from './ajax.js';
+//import ajax from './ajax.js';
 
-ajax(portfolioGallery, '/js/data.json');
+//ajax(portfolioGallery, '/js/data.json');
