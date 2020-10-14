@@ -2,16 +2,25 @@
 /* <----- header -----> */
 const burgerDOM = document.querySelector('header .mob-menu-icon');
     const menuDOM = document.querySelector('body .menu');
+    const bodyDOM = document.querySelector('main');
     //
     burgerDOM.addEventListener('click', () => {
         //susirandame artimiausia tevini elementa div
   
             menuDOM.classList.toggle('show');
+        //uzsideda ant burger icon spalva
             burgerDOM.classList.add('new');
-    
-    //jeigu buvo paspausta yra true, o jeigu true tuomet remove show
+
+    });
+//izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
+    bodyDOM.addEventListener('click', () => {
+        //susirandame artimiausia tevini elementa div
+
+         
+        burgerDOM.classList.remove('new');
     
     });
+
 /* kai scrolini pasikeicia header fonas */
     const activDOM = document.querySelector('.header');
     window.onscroll = function() {scrollFunction()};
@@ -22,6 +31,7 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
             activDOM.classList.remove("active");
         }
     };
+
 
 
 /* uzdedamas progress bar ant meniu */
