@@ -1,6 +1,7 @@
 body {
   background-color: #f3f3f3;
   margin-top: 71px;
+  font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -58,5 +59,9 @@ main {
 @media (max-width: 700px) {
   .container, .container-fluid {
     grid-template-columns: 15px 1fr 15px;
+  }
+  .resume > .resume-grid{
+    grid-template-columns: 1fr;
+    gap: 0px;
   }
 }
