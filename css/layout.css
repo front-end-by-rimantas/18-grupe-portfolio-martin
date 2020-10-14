@@ -51,13 +51,15 @@ main {
     grid-template-columns: 1fr 800px 1fr;
   }
 }
-@media (max-width: 900px) {
-  .container, .container-fluid {
-    grid-template-columns: 1fr 600px 1fr;
+@media (max-width: 1000px) {
+  .container,
+  .container-fluid {
+    grid-template-columns: 1fr 700px 1fr;
   }
 }
-@media (max-width: 700px) {
-  .container, .container-fluid {
+@media (max-width: 740px) {
+  .container, 
+  .container-fluid {
     grid-template-columns: 15px 1fr 15px;
   }
   .resume > .resume-grid{
