@@ -62,7 +62,7 @@ main {
 @media (max-width: 767px) {
   .container,
   .container-fluid {
-    grid-template-columns: 1fr 600px 1fr;
+    grid-template-columns: 1fr 540px 1fr;
   }
 }
 @media (max-width: 580px) {
