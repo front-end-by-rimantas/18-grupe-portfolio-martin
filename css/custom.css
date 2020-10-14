@@ -373,9 +373,9 @@ header {
 /* <----- my services -----> */
 
 .container-services {
-    padding-left: 80px;
-    padding-right: 80px;
-    gap: 30px;
+
+    gap: 35px;
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -383,12 +383,6 @@ header {
     
 }
 
-@media (max-width: 700px) {
-    .container-services {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  } 
 
 .card {
     padding: 20px;
