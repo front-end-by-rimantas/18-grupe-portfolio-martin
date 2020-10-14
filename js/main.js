@@ -53,6 +53,8 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
             })
         }
     };*/
+
+/* progress bar
     const pbDOM = document.querySelector('header .link');
     const barDOM = document.querySelector('body .pb');
 
@@ -65,8 +67,7 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
         barDOM.classList.remove('bar'); 
         barDOM.classList.add('barafter'); 
     });
-
-/* burger button pasikeitimai */
+*/
 
 
 
