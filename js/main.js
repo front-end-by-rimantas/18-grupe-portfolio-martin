@@ -2,20 +2,30 @@
 // hero import
 // about import
 //portfolio import
-import portfolioGallery from './portfolioGallery.js';
+//import portfolioGallery from './portfolioGallery.js';
 
 /* <----- header -----> */
 const burgerDOM = document.querySelector('header .mob-menu-icon');
     const menuDOM = document.querySelector('body .menu');
+    const bodyDOM = document.querySelector('main');
     //
     burgerDOM.addEventListener('click', () => {
         //susirandame artimiausia tevini elementa div
   
             menuDOM.classList.toggle('show');
-    
-    //jeigu buvo paspausta yra true, o jeigu true tuomet remove show
+        //uzsideda ant burger icon spalva
+            burgerDOM.classList.add('new');
+
+    });
+//izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
+    bodyDOM.addEventListener('click', () => {
+        //susirandame artimiausia tevini elementa div
+
+         
+        burgerDOM.classList.remove('new');
     
     });
+
 /* kai scrolini pasikeicia header fonas */
     const activDOM = document.querySelector('.header');
     window.onscroll = function() {scrollFunction()};
@@ -27,6 +37,42 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
         }
     };
 
+
+
+/* uzdedamas progress bar ant meniu */
+  
+ /*   function bar(){
+        const pbDOM = document.querySelectorAll('header .link');
+        const barDOM = document.querySelector('body .pb');
+        for (let i=0; i < pbDOM.lenght; i++)
+        {   const allpb = pbDOM[i];
+            console.log('pbDOM[i]');
+            allpb.addEventListener('pointerenter', () => {
+                barDOM.classList.remove('barafter'); 
+                    barDOM.classList.add('bar'); 
+            });
+            
+            allpb.addEventListener('pointerleave', () => {
+                barDOM.classList.remove('bar'); 
+                barDOM.classList.add('barafter'); 
+            })
+        }
+    };*/
+
+/* progress bar
+    const pbDOM = document.querySelector('header .link');
+    const barDOM = document.querySelector('body .pb');
+
+    pbDOM.addEventListener('pointerenter', () => {
+        barDOM.classList.remove('barafter'); 
+            barDOM.classList.add('bar'); 
+    });
+    
+    pbDOM.addEventListener('pointerleave', () => {
+        barDOM.classList.remove('bar'); 
+        barDOM.classList.add('barafter'); 
+    });
+*/
 
 
 
@@ -54,6 +100,6 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
 // hero logic
 // about logic
 //portfolio logic
-import ajax from './ajax.js';
+//import ajax from './ajax.js';
 
-ajax(portfolioGallery, '/js/data.json');
+//ajax(portfolioGallery, '/js/data.json');
