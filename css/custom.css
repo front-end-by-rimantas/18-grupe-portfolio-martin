@@ -214,6 +214,45 @@ header {
 
 /* <----- hero -----> */
 
+.hero {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: space-between;
+  background-image: url(/img/home.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin-top: -71px;
+  color: #ffffff;
+}
+
+.hero-div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hello {
+  padding-top: 71px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+
+.martin-name {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .martin-name {
+    font-size: 60px;
+  }
+}
+
+.hero-div .btn {
+  margin-top: 40px;
+}
+
 /* <----- about me -----> */
 
 .container-aboutMe {
