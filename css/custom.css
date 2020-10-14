@@ -14,13 +14,13 @@ header {
   position: fixed;
   transition: 0.2s;
   background-color: transparent;
-  border-bottom: 1px solid  rgb(243, 239, 239);
+  border-bottom: 1px solid  rgba(255, 255, 255, 0.123);
 }
 
 
 .hed{
 
-  line-height: 70px;
+  line-height: 60px;
 }
 .active{
   background-color: #fff;
@@ -37,7 +37,7 @@ header {
 }
 .logo > a{
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 22px;
   font-weight: 600;
   padding: 0 !important;
@@ -137,13 +137,12 @@ header {
   font-weight: 600;
   line-height: 40px;
   padding-left: 20px;
-  border-bottom: 1px solid rgb(243, 239, 239);
+  border-top: 1px solid rgb(243, 239, 239);
   text-align: left;
   z-index: 100;
  /* outline: 5px auto -webkit-focus-ring-color;*/
 }
 .show  > .menu-mob-h > a:last-of-type{
-  border-bottom: none;
   margin-bottom: -10px;
 }
 

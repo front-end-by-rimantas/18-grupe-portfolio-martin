@@ -30,7 +30,7 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
     const activDOM = document.querySelector('.header');
     window.onscroll = function() {scrollFunction()};
     function scrollFunction(){
-        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
             activDOM.classList.add("active");
         } else{
             activDOM.classList.remove("active");
