@@ -1,6 +1,11 @@
 // header import
 // hero import
 // about import
+
+// resume import
+import resume from '../js/data/resume.js';
+//resume rendering function
+import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
 //import portfolioGallery from './portfolioGallery.js';
 
@@ -103,3 +108,5 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
 //import ajax from './ajax.js';
 
 //ajax(portfolioGallery, '/js/data.json');
+const { rez } = resume;
+console.log(renderResume('.resume .resume-grid',rez));
