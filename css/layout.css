@@ -20,7 +20,7 @@ main {
 
 .container-fluid {
   display: grid;
-  grid-template-columns: 1fr 1300px 1fr;
+  grid-template-columns: 1fr 1140px 1fr;
 }
 .container-fluid > .row {
   grid-column: 2 / 3;
@@ -28,7 +28,7 @@ main {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1300px 1fr;
+  grid-template-columns: 1fr 1140px 1fr;
   text-align: center;
   padding: 100px 0;
 }
@@ -45,7 +45,7 @@ body > footer {
 @media (max-width: 1500px) {
   .container,
   .container-fluid {
-    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-columns: 1fr 1140px 1fr;
   }
 }
 @media (max-width: 1300px) {
