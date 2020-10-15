@@ -15,7 +15,7 @@ import { renderResume } from '../js/components/resume/renderResume.js';
 //import portfolioGallery from './portfolioGallery.js';
 
 /* <----- header -----> */
-const burgerDOM = document.querySelector('header .mob-menu-icon');
+    const burgerDOM = document.querySelector('header .mob-menu-icon');
     const menuDOM = document.querySelector('body .menu');
     const bodyDOM = document.querySelector('main');
     //
@@ -29,7 +29,7 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
     });
 //izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
     bodyDOM.addEventListener('click', () => {
-        burgerDOM.classList.remove('new');
+    burgerDOM.classList.remove('new');
     
     });
 
@@ -111,6 +111,8 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
 
 //ajax(portfolioGallery, '/js/data.json');
 
-renderResume('.resume .resume-grid',resume);
+// header
 renderMeniu('.header .menu-main-h',header);
 renderMobMeniu('body .menu-mob-h',header);
+//resume
+renderResume('.resume .resume-grid',resume);
