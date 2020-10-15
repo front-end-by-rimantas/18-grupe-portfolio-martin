@@ -63,7 +63,7 @@ main {
     grid-template-columns: 15px 1fr 15px;
   }
   .resume > .resume-grid{
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     gap: 0px;
   }
 }
