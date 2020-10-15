@@ -417,10 +417,10 @@ header {
 }
 
 /* <----- my resume -----> */
-.resume{
+.resume {
   background-color: white;
 }
-.resume-tittle{
+.resume-tittle {
   width: 100%;
   text-transform: uppercase;
   font-size: 32px;
@@ -428,7 +428,7 @@ header {
   position: relative;
   margin-bottom: 60px;
 }
-.resume-tittle:after{
+.resume-tittle:after {
   width: 60px;
   height: 3px;
   background: #111111;
@@ -439,51 +439,50 @@ header {
   margin: auto;
   bottom: -10px;
 }
-.resume-column{
+.resume-column {
   display: inline-block;
-  width:100%;
+  width: 100%;
 }
-.resume-grid{
+.resume-grid {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 30px;
 }
-.work{
+.work {
   padding: 30px;
   text-align: left;
   background-color: rgb(255, 255, 255);
   border: solid 5px rgb(255, 255, 255);
   border-radius: 5px;
-  box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.1);
 }
-.work > h1{
+.work > h1 {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 20px;
   color: #f34236;
   text-transform: uppercase;
 }
-.work > h2{
+.work > h2 {
   font-weight: 600;
   font-size: 18px;
   color: #111;
   text-transform: uppercase;
   margin-bottom: 7px;
 }
-.work > h3{
+.work > h3 {
   text-transform: uppercase;
   color: #828282;
   font-weight: 400;
   margin-bottom: 7px;
   font-size: 18px;
 }
-.work > p{
+.work > p {
   color: #828282;
   font-weight: 400;
   padding-bottom: 40px;
   font-size: 18px;
 }
-
 
 /* <----- hire me -----> */
 .hireMe {
@@ -516,15 +515,15 @@ header {
   position: relative;
 }
 .portfolioTitle2:after {
-    width: 60px;
-    height: 3px;
-    background: #111111;
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: -10px;
+  width: 60px;
+  height: 3px;
+  background: #111111;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -10px;
 }
 
 .portfolioMenu {
@@ -574,7 +573,7 @@ header {
   width: 100%;
   bottom: 0;
   left: 0;
-  position: fixed;
+  right: 0;
   text-align: center;
   background-color: #212121;
   padding-top: 60px;
