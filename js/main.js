@@ -1,11 +1,21 @@
 // header import
+import header from '../js/data/header.js';
+//header rendering function
+import { renderMeniu } from '../js/components/header/renderMeniu.js';
+import { renderMobMeniu } from '../js/components/header/renderMobMeniu.js';
+
 // hero import
 // about import
+
+// resume import
+import resume from '../js/data/resume.js';
+//resume rendering function
+import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
 //import portfolioGallery from './portfolioGallery.js';
 
 /* <----- header -----> */
-const burgerDOM = document.querySelector('header .mob-menu-icon');
+    const burgerDOM = document.querySelector('header .mob-menu-icon');
     const menuDOM = document.querySelector('body .menu');
     const bodyDOM = document.querySelector('main');
     //
@@ -19,10 +29,7 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
     });
 //izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
     bodyDOM.addEventListener('click', () => {
-        //susirandame artimiausia tevini elementa div
-
-         
-        burgerDOM.classList.remove('new');
+    burgerDOM.classList.remove('new');
     
     });
 
@@ -30,7 +37,7 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
     const activDOM = document.querySelector('.header');
     window.onscroll = function() {scrollFunction()};
     function scrollFunction(){
-        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
             activDOM.classList.add("active");
         } else{
             activDOM.classList.remove("active");
@@ -103,3 +110,9 @@ const burgerDOM = document.querySelector('header .mob-menu-icon');
 //import ajax from './ajax.js';
 
 //ajax(portfolioGallery, '/js/data.json');
+
+// header
+renderMeniu('.header .menu-main-h',header);
+renderMobMeniu('body .menu-mob-h',header);
+//resume
+renderResume('.resume .resume-grid',resume);
