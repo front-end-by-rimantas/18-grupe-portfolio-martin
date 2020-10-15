@@ -6,7 +6,7 @@
 
 ### 18a group personal website project
 
-This project is for educational porpuses only. Pull requests are welcome, but priority for real-life students! Thank you for your cooperation!
+This project is for educational purposes only. Pull requests are welcome, but priority for real-life students! Thank you for your cooperation!
 
 Site published at https://front-end-by-rimantas.github.io/18-grupe-portfolio-martin/
 
