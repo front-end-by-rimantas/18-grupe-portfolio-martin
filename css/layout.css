@@ -6,7 +6,8 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas:
     "head"
-    "feed";
+    "feed"
+    "footer";
 }
 
 body > header {
@@ -34,6 +35,11 @@ main {
 
 .container > .row {
   grid-column: 2 / 3;
+}
+
+body > footer {
+  grid-area: footer;
+  grid-column: 1 / 4;
 }
 
 @media (max-width: 1500px) {

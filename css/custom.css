@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 /* <----- header -----> */
 
 header {
@@ -14,17 +10,16 @@ header {
   position: fixed;
   transition: 0.2s;
   background-color: transparent;
-  border-bottom: 1px solid  rgba(255, 255, 255, 0.123);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.123);
 }
 
-
-.hed{
-
+.hed {
   line-height: 60px;
 }
-.active{
+.active {
   background-color: #fff;
-  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px, rgba(58, 78, 95, 0.05) 0 -5px 16px;
+  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
+    rgba(58, 78, 95, 0.05) 0 -5px 16px;
 }
 .logo {
   display: inline-block;
@@ -33,31 +28,27 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: left;
-
 }
-.logo > a{
+.logo > a {
   text-decoration: none;
   color: #fff;
   font-size: 22px;
   font-weight: 600;
   padding: 0 !important;
   line-height: 70px;
-
 }
-.active .logo > a{
- color: red;
-
+.active .logo > a {
+  color: red;
 }
 .nav {
   display: inline-block;
   float: right;
-  
 }
-.progress-bar{
+.progress-bar {
   display: inline-block;
   margin-top: -5px;
 }
-.link{
+.link {
   line-height: 70px;
   text-align: right;
   text-decoration: none;
@@ -66,9 +57,7 @@ header {
   padding-left: 20px;
 }
 
-
-.bar{
-
+.bar {
   height: 3px;
   background-color: red;
   animation-name: loading;
@@ -76,14 +65,13 @@ header {
 }
 @keyframes loading {
   0% {
-      width: 0;
+    width: 0;
   }
   100% {
-      width: 100%;
+    width: 100%;
   }
 }
-.barafter{
-
+.barafter {
   height: 3px;
   width: 0%;
   margin-left: auto;
@@ -93,15 +81,14 @@ header {
 }
 @keyframes loading1 {
   0% {
-      width: 100%;
+    width: 100%;
   }
   100% {
-      width: 0%;
+    width: 0%;
   }
 }
 
 .menu-main-h > a {
-
   text-align: right;
   text-decoration: none;
   color: #fff;
@@ -115,21 +102,20 @@ header {
 .menu-main-h {
   display: block;
   float: left;
-  position: relative; 
+  position: relative;
   margin-top: 9px;
 }
-.show  > .menu-mob-h{
+.show > .menu-mob-h {
   display: block;
   background: #fff;
-  padding-bottom: 10px; 
-  position: fixed; 
-  width: 100%; 
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
   float: left;
   box-shadow: transparent;
-  
 }
 
-.show  > .menu-mob-h > a {
+.show > .menu-mob-h > a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 13px;
@@ -140,37 +126,36 @@ header {
   border-top: 1px solid rgb(243, 239, 239);
   text-align: left;
   z-index: 100;
- /* outline: 5px auto -webkit-focus-ring-color;*/
+  /* outline: 5px auto -webkit-focus-ring-color;*/
 }
-.show  > .menu-mob-h > a:last-of-type{
+.show > .menu-mob-h > a:last-of-type {
   margin-bottom: -10px;
 }
 
-.menu-mob-h{
+.menu-mob-h {
   display: none;
-  background:#c4c4c4;
-  position: relative; 
-  padding-bottom: 10px; 
+  background: #c4c4c4;
   position: relative;
-  width: 100%; 
+  padding-bottom: 10px;
+  position: relative;
+  width: 100%;
   z-index: 1;
 }
 
-
 .mob-menu-ico-h {
-  display: none; 
-  background:transparent; 
+  display: none;
+  background: transparent;
   float: right;
-  position: relative; 
+  position: relative;
   margin-top: 10px;
 }
 
 .mob-menu-icon {
-  display: block; 
-  width: 40px; 
-  height: 40px; 
-  position: relative; 
-  padding:10px; 
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  padding: 10px;
   float: right;
   cursor: pointer;
   background-color: #f34236;
@@ -178,28 +163,28 @@ header {
   margin-top: 5px;
 }
 
-.new{
- outline: auto;
- outline-color: blue;
+.new {
+  outline: auto;
+  outline-color: blue;
 }
 
 .menu-ico-str {
-  display: block; 
-  float: left; 
-  position: relative; 
-  width: 25px; 
-  height: 2px; 
-  background-color:#fff; 
-  margin-bottom: 2px; 
-  margin-top: 3px; 
+  display: block;
+  float: left;
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 2px;
+  margin-top: 3px;
   border-radius: 2px;
   text-align: center;
   margin-left: -2px;
 }
 
 .menu-mob-h a {
-  display: block; 
-  width: 100%; 
+  display: block;
+  width: 100%;
   text-align: center;
 }
 
@@ -210,9 +195,14 @@ header {
   margin-bottom: -40px;
   margin-left: 100px;
 }*/
-@media only screen and (max-width : 990px) {
-  .menu-main-h {display: none; height: auto;}
-  .mob-menu-ico-h {display: block;}
+@media only screen and (max-width: 990px) {
+  .menu-main-h {
+    display: none;
+    height: auto;
+  }
+  .mob-menu-ico-h {
+    display: block;
+  }
 }
 
 /* <----- hero -----> */
@@ -239,7 +229,6 @@ header {
   font-size: 40px;
   font-weight: lighter;
 }
-
 
 .martin-name {
   font-size: 80px;
@@ -373,60 +362,58 @@ header {
 /* <----- my services -----> */
 
 .container-services {
+  gap: 35px;
 
-    gap: 35px;
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
 }
-
 
 .card {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-grow: 4;
-    width: 300px;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    border: solid 5px rgb(255, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 4;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border: solid 5px rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes hover{
-    from {transform: translatey(0px);}
-    to {transform: translatey(-10px);}
-
+@keyframes hover {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-10px);
+  }
 }
 
 .card:hover {
-    border: solid 5px rgb(255, 40, 40);
-    transition-duration: 0.9s;
-    animation: hover 0.3s ease-out forwards;
+  border: solid 5px rgb(255, 40, 40);
+  transition-duration: 0.9s;
+  animation: hover 0.3s ease-out forwards;
 }
 
 .container-services .fas {
-    font-size: 60px;
-    color: rgb(255, 40, 40);
+  font-size: 60px;
+  color: rgb(255, 40, 40);
 }
 
 .card-heading {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .card-p {
-    font-weight: lighter;
-    font-size: 18px;
-    color: #82828a;
-
+  font-weight: lighter;
+  font-size: 18px;
+  color: #82828a;
 }
-
 
 /* <----- my resume -----> */
 .resume{
@@ -527,54 +514,53 @@ header {
   font-size: 35px;
 }
 .half-a-border-on-bottom {
-  border-bottom:3px solid #FFFFFF;
+  border-bottom: 3px solid #ffffff;
   position: relative;
 }
 .half-a-border-on-bottom:after {
   content: "";
-  width:40%;
-  height:3px;
-  background-color:black;
+  width: 40%;
+  height: 3px;
+  background-color: black;
   position: absolute;
   right: 75px;
-  bottom:-3px;
+  bottom: -3px;
 }
- .list {
+.list {
+}
+.portfolioMenu {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: normal;
+  width: 10%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+:first-of-type .portfolioMenu {
+  text-align: right;
+}
+.boxItem {
+  display: inline-block;
+  padding: 10px;
+  width: 33%;
+}
+.shadow {
+  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
+    rgba(58, 78, 95, 0.05) 0 -5px 16px;
+}
 
-}
-   .portfolioMenu {
-      display: inline-block;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: normal;
-      width: 10%;
-      margin-top: 50px;
-      margin-bottom: 20px;
-      font-weight: 600;
-}
- :first-of-type .portfolioMenu {
-    text-align: right;
-} 
-.boxItem{
-display: inline-block;
-padding:10px;
-width: 33%;
-}
-.shadow{
-box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
- rgba(58, 78, 95, 0.05) 0 -5px 16px;
-}
-
-.box{
-box-sizing: border-box;
-padding: 10px;
-background-color: #ffffff;
-box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
- rgba(58, 78, 95, 0.05) 0 -5px 16px;
+.box {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
+    rgba(58, 78, 95, 0.05) 0 -5px 16px;
 }
 .portfolioG3 {
-max-width: 100%;
+  max-width: 100%;
 }
 
 /* <----- testimonials -----> */
@@ -584,3 +570,63 @@ max-width: 100%;
 /* <----- contact me -----> */
 
 /* <----- footer -----> */
+.footer {
+  display: inline-block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  background-color: #212121;
+  padding-top: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.foolog {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding-bottom: 30px;
+  font-size: 43px;
+  font-weight: 900;
+  line-height: 43px;
+}
+.foo-socials {
+  text-decoration: none;
+  color: #999999;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 100px;
+  line-height: 40px;
+  height: 40px;
+  margin: 3px;
+  border-radius: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.foo-socials > a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  padding-bottom: 30px;
+  text-decoration: none;
+  background-color: black;
+  color: #999999;
+  line-height: 20px;
+  height: 40px;
+  margin: 3px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: center;
+  text-align: center;
+}
+a:hover {
+  color: #fff;
+}
+.copyright {
+  text-decoration: none;
+  color: #999999;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
