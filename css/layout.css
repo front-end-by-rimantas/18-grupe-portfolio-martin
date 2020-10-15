@@ -68,8 +68,7 @@ body > footer {
   .container-fluid {
     grid-template-columns: 15px 1fr 15px;
   }
-  .resume > .resume-grid{
+  .resume .resume-grid{
     grid-template-columns: 100%;
-    gap: 0px;
   }
 }
