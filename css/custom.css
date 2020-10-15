@@ -513,22 +513,20 @@ header {
   text-align: center;
   margin-top: 100px;
   font-size: 35px;
-}
-.half-a-border-on-bottom {
-  border-bottom: 3px solid #ffffff;
   position: relative;
 }
-.half-a-border-on-bottom:after {
-  content: "";
-  width: 40%;
-  height: 3px;
-  background-color: black;
-  position: absolute;
-  right: 75px;
-  bottom: -3px;
+.portfolioTitle2:after {
+    width: 60px;
+    height: 3px;
+    background: #111111;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -10px;
 }
-.list {
-}
+
 .portfolioMenu {
   display: inline-block;
   text-align: center;
