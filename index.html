@@ -1,99 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- reset -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
     <!-- 3rd party -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
     <!-- components -->
+    <link rel="stylesheet" href="./css/globalButtons.css" />
     <!-- custom -->
-    <link rel="stylesheet" href="./css/custom.css">
-</head>
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
 
-<body>
+  <body>
     <!-- header -->
-    <header class="container-fluid">
-        <div class="row">
-            HEADER
+    <header class="container-fluid header">
+      <div class="row hed">
+        <div class="logo">
+          <a href="#">MARTIN</a>
         </div>
-    </header>
-    <!-- hero -->
-    <div class="container">
-        <div class="row">
-            HERO
+        <div class="nav">
+          <div class="menu-main-h"></div>
+          <a class="mob-menu-ico-h">
+            <div class="mob-menu-icon">
+              <div class="menu-ico-str"></div>
+              <div class="menu-ico-str"></div>
+              <div class="menu-ico-str"></div>
+            </div>
+          </a>
         </div>
-    </div>
-    <!-- clients -->
-    <div class="container">
+      </div>
+        </header>
+    <div class="menu">
+      <div class="menu-mob-h">
+      </div>
+      </div>
+    <!-- header end -->
+
+    <main>
+      <!-- hero -->
+
+      <div class="container hero">
         <div class="row">
-            CLIENTS
+          <div class="hero-div">
+            <h2 class="hello">Hello! I'm</h2>
+            <h1 class="martin-name">Martin Luther</h1>
+            <p class="areas">
+              WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT |
+              MOBILE APPS
+            </p>
+            <a class="btn" href="#contact">Let's talk new</a>
+          </div>
         </div>
-    </div>
-    <!-- services -->
-    <div class="container">
+      </div>
+
+      <!-- about me -->
+      <div id="About" class="container container-aboutMe">
         <div class="row">
-            SERVICES
+          <div class="aboutMe-right-column">
+            <img
+              src="./img/avtar-01.jpg"
+              alt="Portfolio picture"
+              class="portfolioPic"
+            />
+          </div>
+
+          <div class="aboutMe-left-column">
+            <h2 class="aboutMe-title">
+              About <span class="aboutMe-me">Me</span>
+            </h2>
+            <h3 class="aboutMe-hello">Hello! i'm Martin Luther</h3>
+            <p class="aboutMe-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+            <p class="aboutMe-paragraph">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+
+            <div class="aboutMe-socials">
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-facebook"
+                aria-hidden="true"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-twitter"
+                aria-hidden="true"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-instagram"
+                aria-hidden="true"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-linkedin"
+                aria-hidden="true"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-pinterest"
+                aria-hidden="true"
+              ></a>
+            </div>
+            <div class="aboutMe-button">
+              <a class="btn btn-contactMe" href="#" target="_blank"
+                >Contact Me</a
+              >
+              <a class="btn btn-downloadCV" href="#" target="_blank"
+                >Download CV</a
+              >
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- our company -->
-    <div class="container">
+      </div>
+        <!--my services -->
+    <div id="Services" class="container">
+      <div class="row">
+          <div class="container-services">
+            <div class="card">
+              <i class="fas fa-desktop"></i>
+              <p class="card-heading">Search Optimization</p>
+              <p class="card-p">
+                The9 is a graphically polished, interactive, easily
+                customizable, highly modern, fast loading.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-layer-group"></i>
+              <p class="card-heading">Logo & Identity</p>
+              <p class="card-p">
+                The9 is a graphically polished, interactive, easily
+                customizable, highly modern, fast loading.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-paper-plane"></i>
+              <p class="card-heading">Graphics Design</p>
+              <p class="card-p">
+                The9 is a graphically polished, interactive, easily
+                customizable, highly modern, fast loading.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-mobile-alt"></i>
+              <p class="card-heading">Fully Responsive</p>
+              <p class="card-p">
+                The9 is a graphically polished, interactive, easily
+                customizable, highly modern, fast loading.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-tools"></i>
+              <p class="card-heading">Advanced Options</p>
+              <p class="card-p">
+                The9 is a graphically polished, interactive, easily
+                customizable, highly modern, fast loading.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-tags"></i>
+              <p class="card-heading">Reasonable Pricing</p>
+              <p class="card-p">
+                The9 is a graphically polished, interactive, easily
+                customizable, highly modern, fast loading.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- my resume -->
+      <div class="container resume">
+        <div class="row resume-column">
+          <h2 class="resume-tittle">
+            <span style="color: red">MY</span> resume
+          </h2>
+          <div class="resume-grid"></div>
+        </div>
+      </div>
+      <!-- hire me -->
+      <div>
+        <div class="row hireMe">
+          <h3 class="freelance">I AM AVAILABLE FOR FREELANCE</h3>
+          <div class="btn2 btn-white">HIRE ME NOW</div>
+        </div>
+      </div>
+      <!-- my portfolio -->
+      <div id="Portfolio" class="container">
         <div class="row">
-            OUR COMPANY
+          <h2 class="portfolioTitle">
+            <span style="color: red">MY</span>
+            <span class="portfolioTitle2">PORTFOLIO</span>
+          </h2>
         </div>
-    </div>
-    <!-- hire us -->
-    <div class="container">
         <div class="row">
-            HIRE US
+          <div>
+            <ul class="filter">
+              <li class="portfolioMenu">ALL</li>
+              <li class="portfolioMenu">BRANDING</li>
+              <li class="portfolioMenu">PHOTOSHOP</li>
+              <li class="portfolioMenu">FASHION</li>
+              <li class="portfolioMenu">PRODUCT</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-1.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-2.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-3.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-4.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-5.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-6.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-7.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-8.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="boxItem">
+              <div class="shadow">
+                <div class="box">
+                  <img
+                    class="portfolioG3 col-4"
+                    src="./img/PortfolioImg/portfolio-1 (1).jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- achievements -->
-    <div class="container">
-        <div class="row">
-            ACHIEVEMENTS
-        </div>
-    </div>
-    <!-- watch video -->
-    <div class="container-fluid">
-        <div class="row">
-            WATCH VIDEO
-        </div>
-    </div>
-    <!-- case studies -->
-    <div class="container">
-        <div class="row">
-            CASE STUDIES
-        </div>
-    </div>
-    <!-- testimonials -->
-    <div class="container-fluid">
-        <div class="row">
-            TESTIMONIALS
-        </div>
-    </div>
-    <!-- blog -->
-    <div class="container">
-        <div class="row">
-            BLOG
-        </div>
-    </div>
-    <!-- contact -->
-    <div class="container">
-        <div class="row">
-            CONTACT
-        </div>
-    </div>
+      </div>
+
+      <!-- testimonials -->
+      <div class="container">
+        <div class="row">TESTIMONIALS</div>
+      </div>
+      <!-- my blogs -->
+      <div id="Blog" class="container">
+        <div class="row">MY BLOGS</div>
+      </div>
+      <!-- contact me -->
+      <div id="Contact" class="container">
+        <div class="row">CONTACT ME</div>
+      </div>
+    </main>
     <!-- footer -->
-    <footer class="container">
-        <div class="row">
-            FOOTER
+    <footer class="container-fluid row footer">
+      <div>
+        <div class="foolog">Martin</div>
+        <div class="foo-socials">
+          <a
+            href="#"
+            target="_blank"
+            class="fa fa-facebook"
+            aria-hidden="true"
+          ></a>
+          <a
+            href="#"
+            target="_blank"
+            class="fa fa-twitter"
+            aria-hidden="true"
+          ></a>
+          <a
+            href="#"
+            target="_blank"
+            class="fa fa-instagram"
+            aria-hidden="true"
+          ></a>
+          <a
+            href="#"
+            target="_blank"
+            class="fa fa-linkedin"
+            aria-hidden="true"
+          ></a>
+          <a
+            href="#"
+            target="_blank"
+            class="fa fa-pinterest"
+            aria-hidden="true"
+          ></a>
         </div>
+        <div class="copyright">© 2019 copyright all right reserved</div>
+      </div>
     </footer>
     <script src="./js/main.js" type="module"></script>
-</body>
-
+  </body>
 </html>
