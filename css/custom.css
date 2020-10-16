@@ -565,7 +565,7 @@ header {
 
 /* <----- my blogs -----> */
 
-/* <----- contact me -----> */
+/* <----- contact me starts-----> */
 
 .container-contactMe{
   display: inline-block;
@@ -576,7 +576,7 @@ header {
 .row-contactMe{
   margin-left: 120px;
   margin-right: 110px;
-  background-color: #f3f3f3  
+  background-color: #f3f3f3;  
 }
 
 .contactMe-contact {
@@ -784,6 +784,8 @@ vertical-align: middle;
     padding-top: 5px;
     line-height: 1.6;
   }
+
+/* <----- contact me ends -----> */
 
 /* <----- footer -----> */
 .footer {
