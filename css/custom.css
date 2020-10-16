@@ -569,6 +569,7 @@ header {
 .container-contactMe{
   display: inline-block;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 .row-contactMe{
@@ -610,7 +611,7 @@ header {
 
 .contactMe-left-column{
   display: inline-block;
-  width: 65%;
+  width: 60%;
   float: left;
   height: 420px;
   margin-top: 15px;
@@ -673,9 +674,8 @@ line-height: 30px;
   float: left;
   padding: 10px;
   border: #D3D8DE;
-  
-}
 
+}
 
  .form > .last-row {
     display: inline-block;
@@ -697,7 +697,7 @@ line-height: 30px;
 .contactMe-form-row > textarea {
   height: 100%;
   min-height: 180px;
-  max-height: 500px;
+  max-height: 400px;
   resize: vertical;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -712,7 +712,7 @@ float: left;
 .contactMe-right-column{
 display: inline-block;
 width: 35%;
-float: left;
+float: right;
  /* height: 420px; */
 margin-top: 15px;
 background-color: white;
@@ -727,7 +727,7 @@ padding-top: 20px;
     display: inline-block;
     width: 100%;
     float: left;
-    padding: 10px;
+    /* padding: 10px; */
     left: 0;
     bottom: 0;
 }
