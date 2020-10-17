@@ -246,7 +246,7 @@ header {
   margin-top: 40px;
 }
 
-/* <----- about me -----> */
+/* <----- about me starts here-----> */
 
 #aboutMe {
   background: #ffffff;
@@ -400,6 +400,7 @@ header {
     }
 }
 
+/* <----- about Me ends here----> */
 
 /* <----- my services -----> */
 
