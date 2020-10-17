@@ -44,42 +44,23 @@ import { renderResume } from '../js/components/resume/renderResume.js';
         }
     };
 
-
+    function red() {
+        document.getElementById("link").style.borderBottomColor = "red";
+      };
 
 /* uzdedamas progress bar ant meniu */
-  
- /*   function bar(){
-        const pbDOM = document.querySelectorAll('header .link');
-        const barDOM = document.querySelector('body .pb');
-        for (let i=0; i < pbDOM.lenght; i++)
-        {   const allpb = pbDOM[i];
-            console.log('pbDOM[i]');
-            allpb.addEventListener('pointerenter', () => {
-                barDOM.classList.remove('barafter'); 
-                    barDOM.classList.add('bar'); 
-            });
-            
-            allpb.addEventListener('pointerleave', () => {
-                barDOM.classList.remove('bar'); 
-                barDOM.classList.add('barafter'); 
-            })
-        }
-    };*/
 
-/* progress bar
-    const pbDOM = document.querySelector('header .link');
+
+  /*  const pbDOM = document.querySelector('header .link');
     const barDOM = document.querySelector('body .pb');
 
     pbDOM.addEventListener('pointerenter', () => {
         barDOM.classList.remove('barafter'); 
             barDOM.classList.add('bar'); 
     });
-    
-    pbDOM.addEventListener('pointerleave', () => {
-        barDOM.classList.remove('bar'); 
-        barDOM.classList.add('barafter'); 
-    });
-*/
+    */
+   
+
 
 
 
@@ -116,3 +97,23 @@ renderMeniu('.header .menu-main-h',header);
 renderMobMeniu('body .menu-mob-h',header);
 //resume
 renderResume('.resume .resume-grid',resume);
+
+/*const pbDOM = document.querySelectorAll('header .link');
+const barDOM = document.querySelector('body .pb');
+
+   function bar(){
+       
+        for (let i=0; i < pbDOM.lenght; i++)
+        {   const allpb = pbDOM[i];
+            console.log('da');
+            allpb.addEventListener('pointerenter', () => {
+                barDOM.classList.remove('barafter'); 
+                    barDOM.classList.add('bar'); 
+            });
+            
+            allpb.addEventListener('pointerleave', () => {
+                barDOM.classList.remove('bar'); 
+                barDOM.classList.add('barafter'); 
+            })
+        }
+    };*/

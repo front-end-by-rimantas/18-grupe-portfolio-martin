@@ -54,10 +54,8 @@ header {
 }
 .progress-bar:hover {
   border-bottom: 2px solid red;
-  
-  animation-name: loading;
-  animation-duration: 1s;
 }
+
 .link {
   line-height: 70px;
   text-align: right;
