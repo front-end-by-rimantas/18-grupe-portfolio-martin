@@ -44,21 +44,30 @@ header {
   display: inline-block;
   float: right;
 }
+.border{
+  display: inline-block;
+
+  padding-left: 20px;
+}
 .progress-bar {
   display: inline-block;
   margin-top: -5px;
 }
-
+.progress-bar:hover {
+  border-bottom: 2px solid red;
+  
+  animation-name: loading;
+  animation-duration: 1s;
+}
 .link {
   line-height: 70px;
   text-align: right;
   text-decoration: none;
   color: #fff;
   font-weight: bolder;
-  padding-left: 20px;
 }
 
-.bar {
+/*.bar {
   height: 3px;
   background-color: red;
   animation-name: loading;
@@ -87,7 +96,7 @@ header {
   100% {
     width: 0%;
   }
-}
+}*/
 
 .menu-main-h > a {
   text-align: right;
@@ -97,7 +106,7 @@ header {
   padding-left: 20px;
 }
 
-.active .menu-main-h > .progress-bar > .link {
+.active .menu-main-h > .border > .progress-bar > .link {
   color: #000;
 }
 .menu-main-h {
