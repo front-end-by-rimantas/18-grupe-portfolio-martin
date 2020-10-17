@@ -543,7 +543,7 @@ header {
 .boxItem {
   display: inline-block;
   padding: 10px;
-  width: 33%;
+  width: 33%; 
 }
 .shadow {
   box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
@@ -560,7 +560,17 @@ header {
 .portfolioG3 {
   max-width: 100%;
 }
-
+ @media (max-width: 767px){
+  .boxItem {
+     width: 50%;
+   }
+  }
+ 
+   @media (max-width: 567px) {
+   .portfolio-content.grid-col-3 .grid-item {
+       width: 100%;
+   }
+  }
 /* <----- testimonials -----> */
 
 /* <----- my blogs -----> */
