@@ -23,11 +23,11 @@ class renderGalleryImages {
         for ( const item of this.data) {
             new renderGalleryImage({
                 parentDOM: this.DOM,
-                data: this.data
+                data: item
             });
            
         }
-       
+        
 
         this.addEvents();
     }
@@ -37,7 +37,7 @@ class renderGalleryImages {
     }    
 
      render() {
-        this.parentDOM.innerHTML = `<div class="list"></div>`;
+        this.parentDOM.innerHTML = `<div class="list">LIST</div>`;
         this.DOM = this.parentDOM.querySelector('.list');
     }
 }

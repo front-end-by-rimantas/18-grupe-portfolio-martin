@@ -12,17 +12,17 @@ export default [
     {
         img: 'portfolio-3.jpg',
         title: 'Our Photography',
-        tags: []
+        tags: ['3']
     },
     {
         img: 'portfolio-4.jpg',
         title: 'Our Photography',
-        tags: []
+        tags: ['4']
     },
     {
         img: 'portfolio-5.jpg',
         title: 'Our Photography',
-        tags: []
+        tags: ['5']
     },
     {
         img: 'portfolio-1.jpg',

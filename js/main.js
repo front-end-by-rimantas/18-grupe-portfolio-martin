@@ -12,8 +12,8 @@ import resume from '../js/data/resume.js';
 //resume rendering function
 import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
-import galleryData from '../js/data/gallery.js';
-import { renderGallery } from '../js/components/gallery/renderGallery.js'; 
+import gallery from './data/gallery.js';
+import { renderGallery } from './components/gallery/renderGallery.js'; 
 
 /* <----- header -----> */
     const burgerDOM = document.querySelector('header .mob-menu-icon');
@@ -97,7 +97,7 @@ import { renderGallery } from '../js/components/gallery/renderGallery.js';
 /* <----- my portfolio -----> */
 new renderGallery({
     selector: '#PortfolioGallery',
-    data: galleryData
+    data: gallery
 });
 
 /* <----- testimonials -----> */

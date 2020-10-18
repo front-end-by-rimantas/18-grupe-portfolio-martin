@@ -26,7 +26,7 @@ class renderGalleryImage {
     }    
 
      render() {
-        this.parentDOM.innerHTML += `<div class="item">ITEM: ${this.data.tags} </div>`;
+        this.parentDOM.innerHTML += `<div class="item">ITEM: ${this.data.title}</div>`;
         this.DOM = this.parentDOM.querySelector('.item');
     }
 }
