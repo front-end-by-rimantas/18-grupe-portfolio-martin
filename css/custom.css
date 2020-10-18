@@ -508,6 +508,9 @@ header {
   box-shadow: 0px 8px 15px rgba(17, 17, 17, 0.1);
 }
 /* <----- my portfolio -----> */
+.portfolio-bg{
+  background-color: #fff;
+}
 .portfolioTitle {
   text-align: center;
   margin-top: 100px;
@@ -562,7 +565,53 @@ header {
 }
 
 /* <----- testimonials -----> */
-
+.testimonials-bg{
+  background-color: #f3f3f3;
+}
+.t-column{
+  display: inline-block;
+  width: 500px;
+}
+.testimonials{
+  border: 1px solid #ddd;
+  padding: 15px 10px 30px 10px;
+  position: relative;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+}
+.testimonials > img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 0 20px;
+  margin-top:10px;
+}
+.testimonials > p{
+  font-size: 18px;
+  margin: 10px 0;
+  color: #828282;
+}
+.testimonials > h5{
+  font-size: 20px;
+  font-weight: 600;
+}
+.testimonials > label{
+  color: #828282;
+  font-size: 18px;
+  margin-bottom:20px;
+}
+.dots > span{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 1px solid #f34236;
+  border-radius: 50%;
+  margin: 0 5px;
+  margin-top: 20px;
+}
 /* <----- my blogs -----> */
 
 /* <----- contact me -----> */
