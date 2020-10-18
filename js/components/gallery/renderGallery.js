@@ -1,5 +1,6 @@
 //imports
 import { renderGalleryImages } from './renderGalleryImages.js';
+import { renderGalleryFilter } from './renderGalleryFilter.js';
 
 // params validation
 
@@ -17,6 +18,7 @@ class renderGallery {
         this.selectorDOM = null;
         this.DOM = null;
 
+        this.filter = null;
         this.list = null;
         console.log(this.data);
         
@@ -28,6 +30,11 @@ class renderGallery {
             return;
         }
         this.render();
+        
+        this.filter = new renderGalleryFilter({
+            parentDOM: this.DOM,
+            data: this.data
+        });
         this.list = new renderGalleryImages({
             parentDOM: this.DOM,
             data: this.data

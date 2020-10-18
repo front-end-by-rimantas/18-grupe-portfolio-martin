@@ -26,7 +26,12 @@ class renderGalleryImage {
     }    
 
      render() {
-        this.parentDOM.innerHTML += `<div class="item">ITEM: ${this.data.title}</div>`;
+         const HTML = `<div class="item">
+         <img src = "#" alt= "Image">
+         <div class="title"></div>
+         <div class="tags"></div>
+         </div>`;
+        this.parentDOM.insertAdjacentHTML('beforeend', HTML);
         this.DOM = this.parentDOM.querySelector('.item');
     }
 }

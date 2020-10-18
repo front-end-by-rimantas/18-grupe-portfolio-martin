@@ -17,7 +17,8 @@ class renderGalleryImages {
 
         this.init();   
     }
-
+// ciklas konstruoja po viena boxika portfolio galerry.
+//  item identifikuoja viena objektuka is data failo
     init(){
         this.render();
         for ( const item of this.data) {
@@ -37,7 +38,7 @@ class renderGalleryImages {
     }    
 
      render() {
-        this.parentDOM.innerHTML = `<div class="list">LIST</div>`;
+        this.parentDOM.insertAdjacentHTML('beforeend', `<div class="list">LIST</div>`);
         this.DOM = this.parentDOM.querySelector('.list');
     }
 }

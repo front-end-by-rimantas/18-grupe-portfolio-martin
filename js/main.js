@@ -96,7 +96,7 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 
 /* <----- my portfolio -----> */
 new renderGallery({
-    selector: '#PortfolioGallery',
+    selector: '#portfolioGallery',
     data: gallery
 });
 
