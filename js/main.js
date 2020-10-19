@@ -89,6 +89,15 @@ import { renderResume } from '../js/components/resume/renderResume.js';
 
 /* <----- my services -----> */
 
+
+import data from './data/services.js';
+
+import { renderServices } from './components/services/renderServices.js';
+const { services } = data;
+
+renderServices('#generate-services', services);
+
+
 /* <----- my resume -----> */
 
 /* <----- hire me -----> */
