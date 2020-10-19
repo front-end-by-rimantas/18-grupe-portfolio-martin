@@ -11,6 +11,7 @@ class renderGalleryImages {
     constructor(params) {
         this.parentDOM = params.parentDOM;
         this.data = params.data;
+        this.imagesDirectory = params.imagesDirectory;
         console.log('is images')
         console.log(this.data);
         this.DOM = null;
@@ -24,7 +25,8 @@ class renderGalleryImages {
         for ( const item of this.data) {
             new renderGalleryImage({
                 parentDOM: this.DOM,
-                data: item
+                data: item,
+                imagesDirectory: this.imagesDirectory
             });
            
         }
@@ -38,7 +40,7 @@ class renderGalleryImages {
     }    
 
      render() {
-        this.parentDOM.insertAdjacentHTML('beforeend', `<div class="list">LIST</div>`);
+        this.parentDOM.insertAdjacentHTML('beforeend', `<div class="list"></div>`);
         this.DOM = this.parentDOM.querySelector('.list');
     }
 }

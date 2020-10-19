@@ -26,7 +26,7 @@ class renderGalleryFilterItem {
     }    
 
      render() {
-        this.parentDOM.insertjacentHTML('beforeend', `<div class="option">ITEM: ${this.data.title}</div>`);
+        this.parentDOM.insertAdjacentHTML('beforeend', `<div class="option">ITEM: ${this.data.title}</div>`);
         this.DOM = this.parentDOM.querySelector('.option');
     }
 }

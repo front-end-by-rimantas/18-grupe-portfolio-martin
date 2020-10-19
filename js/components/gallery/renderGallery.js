@@ -14,6 +14,7 @@ class renderGallery {
     constructor(params) {
         this.selector = params.selector;
         this.data = params.data;
+        this.imagesDirectory = params.imagesDirectory;
 
         this.selectorDOM = null;
         this.DOM = null;
@@ -37,7 +38,8 @@ class renderGallery {
         });
         this.list = new renderGalleryImages({
             parentDOM: this.DOM,
-            data: this.data
+            data: this.data,
+            imagesDirectory: this.imagesDirectory
         });
         this.addEvents();
     }

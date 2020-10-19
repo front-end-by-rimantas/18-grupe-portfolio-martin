@@ -11,6 +11,7 @@ class renderGalleryImage {
     constructor(params) {
         this.parentDOM = params.parentDOM;
         this.data = params.data;
+        this.imagesDirectory = params.imagesDirectory;
         this.DOM = null;
 
         this.init();   
@@ -27,10 +28,14 @@ class renderGalleryImage {
 
      render() {
          const HTML = `<div class="item">
-         <img src = "#" alt= "Image">
-         <div class="title"></div>
-         <div class="tags"></div>
-         </div>`;
+                            <div class="image">
+                                <img src ="${this.imagesDirectory + this.data.img}" alt= "Image">
+                                <div class="hover">
+                                    <i class="plus"></i>
+                                </div>
+                                <div class="title">${this.data.title}</div>
+                            <div class="tags">${this.data.tags}</div>
+                        </div>`;
         this.parentDOM.insertAdjacentHTML('beforeend', HTML);
         this.DOM = this.parentDOM.querySelector('.item');
     }

@@ -97,7 +97,8 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 /* <----- my portfolio -----> */
 new renderGallery({
     selector: '#portfolioGallery',
-    data: gallery
+    data: gallery,
+    imagesDirectory: './img/portfolioImg/'
 });
 
 /* <----- testimonials -----> */

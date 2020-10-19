@@ -1,5 +1,5 @@
 //imports
-// import { renderGalleryFilterItem } from './renderGalleryFilterItem.js';
+import { renderGalleryFilterItem } from './renderGalleryFilterItem.js';
 // params validation
 
 // logic
@@ -21,10 +21,10 @@ class renderGalleryFilter {
         this.render();
 
         for ( const item of this.data) {
-            // new renderGalleryFilterItem({
-            //     parentDOM: this.DOM,
-            //     data: item
-            // });
+            new renderGalleryFilterItem({
+                parentDOM: this.DOM,
+                data: item
+            });
         }
         
         this.addEvents(); 
