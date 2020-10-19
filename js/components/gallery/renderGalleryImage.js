@@ -30,11 +30,17 @@ class renderGalleryImage {
          const HTML = `<div class="item">
                             <div class="image">
                                 <img src ="${this.imagesDirectory + this.data.img}" alt= "Image">
+                        
                                 <div class="hover">
-                                    <i class="plus"></i>
+                                    <a href="#" class="plus">
+                                    <img src ="${this.imagesDirectory + this.data.plus}" alt= "Image">
+                                    </a>
+                                    <h5 class="title">
+                                        <a href="#"> ${this.data.title}</a>
+                                    </h5>
                                 </div>
-                                <div class="title">${this.data.title}</div>
-                            <div class="tags">${this.data.tags}</div>
+                             </div>   
+                            
                         </div>`;
         this.parentDOM.insertAdjacentHTML('beforeend', HTML);
         this.DOM = this.parentDOM.querySelector('.item');

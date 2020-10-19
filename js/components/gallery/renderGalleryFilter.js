@@ -11,23 +11,36 @@ class renderGalleryFilter {
     constructor(params) {
         this.parentDOM = params.parentDOM;
         this.data = params.data;
+        this.tags = [];
         this.DOM = null;
-
+console.log(this.data);
         this.init();   
     }
 // ciklas konstruoja po viena boxika portfolio galerry.
 //  item identifikuoja viena objektuka is data failo
     init(){
         this.render();
+        this.filterTags();
 
-        for ( const item of this.data) {
+        for ( const tag of this.tags) {
             new renderGalleryFilterItem({
                 parentDOM: this.DOM,
-                data: item
+                data: tag
             });
         }
         
         this.addEvents(); 
+    }
+
+    filterTags() {
+        for (const item of this.data) {
+            for (const tag of item.tags){
+                if (!this.tags.includes(tag)) {
+                this.tags.push(tag);
+                }
+            }
+        }
+        console.log(this.tags);
     }
      
     addEvents(){

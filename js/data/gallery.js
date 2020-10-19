@@ -2,47 +2,56 @@ export default [
     {
         img: 'portfolio-1.jpg',
         title: 'Our Photography',
-        tags: ['1']
+        plus: 'plus.png',
+        tags: ['ALL','BRANDING', 'PRODUCT']
     },
     {
         img: 'portfolio-2.jpg',
         title: 'Our Photography',
-        tags: ['2']
+        plus: 'plus.png',
+        tags: ['ALL','PHOTOSHOP']
     },
     {
         img: 'portfolio-3.jpg',
         title: 'Our Photography',
-        tags: ['3']
+        plus: 'plus.png',
+        tags: ['ALL','FASHION', 'PRODUCT']
     },
     {
         img: 'portfolio-4.jpg',
         title: 'Our Photography',
-        tags: ['4']
+        plus: 'plus.png',
+        tags: ['ALL','PHOTOSHOP']
     },
     {
         img: 'portfolio-5.jpg',
         title: 'Our Photography',
-        tags: ['5']
+        plus: 'plus.png',
+        tags: ['ALL','FASHION', 'PRODUCT']
     },
     {
-        img: 'portfolio-1.jpg',
+        img: 'portfolio-6.jpg',
         title: 'Our Photography',
-        tags: []
+        plus: 'plus.png',
+        tags: ['ALL','BRANDING']
     },
     {
-        img: 'portfolio-1.jpg',
+        img: 'portfolio-7.jpg',
         title: 'Our Photography',
-        tags: []
+        plus: 'plus.png',
+        tags: ['ALL','BRANDING']
     },
     {
-        img: 'portfolio-1.jpg',
+        img: 'portfolio-8.jpg',
         title: 'Our Photography',
-        tags: []
+        plus: 'plus.png',
+        tags: ['ALL','BRANDING']
     },
     {
-        img: 'portfolio-1.jpg',
+        img: 'portfolio-9.jpg',
         title: 'Our Photography',
-        tags: []
+        plus: 'plus.png',
+        tags: ['ALL','BRANDING', 'PRODUCT']
     },
 
 ];

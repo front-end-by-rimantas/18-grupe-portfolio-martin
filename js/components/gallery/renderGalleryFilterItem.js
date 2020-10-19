@@ -10,7 +10,7 @@
 class renderGalleryFilterItem {
     constructor(params) {
         this.parentDOM = params.parentDOM;
-        this.data = params.data;
+        this.tag = params.data;
         this.DOM = null;
 
         this.init();   
@@ -26,7 +26,7 @@ class renderGalleryFilterItem {
     }    
 
      render() {
-        this.parentDOM.insertAdjacentHTML('beforeend', `<div class="option">ITEM: ${this.data.title}</div>`);
+        this.parentDOM.insertAdjacentHTML('beforeend', `<div class="option">${this.tag}</div>`);
         this.DOM = this.parentDOM.querySelector('.option');
     }
 }
