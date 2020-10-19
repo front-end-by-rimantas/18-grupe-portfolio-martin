@@ -101,7 +101,7 @@ renderServices('#generate-services', services);
 /* <----- my resume -----> */
 
 /* <----- hire me -----> */
-
+import { focusOnHero } from "./components/hireMe/hireMe.js"
 /* <----- my portfolio -----> */
 
 /* <----- testimonials -----> */
@@ -124,4 +124,6 @@ renderServices('#generate-services', services);
 renderMeniu('.header .menu-main-h',header);
 renderMobMeniu('body .menu-mob-h',header);
 //resume
-renderResume('.resume .resume-grid',resume);
+renderResume('.resume .resume-grid', resume);
+// hireMe
+focusOnHero(); 
