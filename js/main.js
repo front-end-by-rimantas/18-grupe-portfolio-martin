@@ -92,7 +92,7 @@ import { renderResume } from '../js/components/resume/renderResume.js';
 /* <----- my resume -----> */
 
 /* <----- hire me -----> */
-
+import { focusOnHero } from "./components/hireMe/hireMe.js"
 /* <----- my portfolio -----> */
 
 /* <----- testimonials -----> */
@@ -115,4 +115,6 @@ import { renderResume } from '../js/components/resume/renderResume.js';
 renderMeniu('.header .menu-main-h',header);
 renderMobMeniu('body .menu-mob-h',header);
 //resume
-renderResume('.resume .resume-grid',resume);
+renderResume('.resume .resume-grid', resume);
+// hireMe
+focusOnHero(); 
