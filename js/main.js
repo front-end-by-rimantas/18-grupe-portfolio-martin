@@ -93,12 +93,17 @@ import { renderResume } from '../js/components/resume/renderResume.js';
 
 /* <----- hire me -----> */
 import { focusOnHero } from "./components/hireMe/hireMe.js"
+focusOnHero(); 
 /* <----- my portfolio -----> */
 
 /* <----- testimonials -----> */
 
 /* <----- my blogs -----> */
-import { renderBlogs } from "../js/components/blogs/renderBlogs.js"
+import { renderBlogs } from "../js/components/blogs/renderBlogs.js";
+import { blogsData } from "./data/blogs.js";
+import { imgHover } from "./components/blogs/blogsHover.js";
+renderBlogs('.blogs_block', blogsData);
+imgHover();
 /* <----- contact me -----> */
 
 /* <----- footer -----> */
@@ -116,8 +121,3 @@ renderMeniu('.header .menu-main-h',header);
 renderMobMeniu('body .menu-mob-h',header);
 //resume
 renderResume('.resume .resume-grid', resume);
-// hireMe
-focusOnHero(); 
-// blogs
-import { blogsData } from "./data/blogs.js";
-renderBlogs('.blogs_block', blogsData);

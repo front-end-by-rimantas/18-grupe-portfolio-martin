@@ -647,8 +647,7 @@ header {
 }
 img {
   max-width: 100%;
-  overflow: hidden;
-  max-width: 100%;
+  box-sizing: border-box;
   vertical-align: middle;
   border-style: none;
   transform: scale(1);

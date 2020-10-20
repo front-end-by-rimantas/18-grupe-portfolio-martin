@@ -1,6 +1,5 @@
 function renderBlogs(selector, blogsData) {
   //validation
-    console.log(blogsData);
 
   //logic
   const DOM = document.querySelector(selector);
@@ -10,7 +9,7 @@ function renderBlogs(selector, blogsData) {
     const rez = blogsData.data[i];
       html += `<div class="blogs">
       <div>
-        <img src="${rez.imagesPath}"></img>
+        <img class="imghover" src="${rez.imagesPath}"></img>
       </div>
         <span>${rez.date}</span>
         <h5 class="blog-yours">${rez.linkYours}</h5>
@@ -20,7 +19,5 @@ function renderBlogs(selector, blogsData) {
     }
   return DOM.innerHTML = html;
 }
-
-
 
 export { renderBlogs };
