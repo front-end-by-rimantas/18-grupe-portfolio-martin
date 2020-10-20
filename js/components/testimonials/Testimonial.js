@@ -75,10 +75,10 @@ class Controls {
     render(){
         return `<div class="controls">...</div>`;
     }
-    showNext(step){
+    showNext(step = 1){
         this.currentlyActive+=step;
     }
-    showPrevious(step){
+    showPrevious(step = 1){
         this.currentlyActive-=step;
     }
 }
