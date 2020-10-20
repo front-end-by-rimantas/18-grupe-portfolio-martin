@@ -1,6 +1,6 @@
-function generateAreaContacts(cont) {
+function generateContacts(cont) {
 
-    return `< div class="contactMe-planeIcon" >
+  return `<div class="contactMe-planeIcon" >
         <a class="fa fa-paper-plane" aria-hidden="true"></a>
             </div >
              <h2 class="contactMe-dropLine">${cont.title2}</h2>
@@ -22,8 +22,7 @@ function generateAreaContacts(cont) {
               <div class="contactMe-button">
                 <a class="btn btn-getInTouch" href="#" target="_blank">${cont.button}</a>
               </div>
-            </form>;
-            </div>`
-}
+            </form>;`
+};
 
-export { generateAreaContacts }
+export default generateContacts;

@@ -1,4 +1,5 @@
-import generateAreaContacts from './generateAreaCotacts.js'
+import generateContacts from './generateCotacts.js';
+
 
 function renderContacts(x) {
 
@@ -7,16 +8,17 @@ function renderContacts(x) {
   // logic
 
   let HTML = '';
-  for (let i = 0; i < x.length; i++) {
-    const cont = x[i];
+  for (let i = 0; i < x.contactMe.length; i++) {
+    const cont = x.contactMe[i];
 
-    HTML += generateAreaContacts(cont);
+    HTML += generateContacts(cont)
   }
 
-  console.log(HTML);
+  // console.log(HTML);
 
   const contactsDOM = document.querySelector('.contactMe-leftSide');
   contactsDOM.innerHTML = HTML;
-}
+};
+
 
 export { renderContacts }

@@ -101,11 +101,13 @@ import { focusOnHero } from "./components/hireMe/hireMe.js"
 
 /* <----- contact me -----> */
 
-import { contacts } from '../js/data/contacts.js';
-
-import { renderContacts } from '../js/components/contacts/renderContacts.js';
-
+import { contacts } from './data/contacts.js';
+import { renderContacts } from './components/contacts/renderContacts.js';
 renderContacts(contacts);
+
+import { contactInfo } from './data/contacts.js';
+import { renderContactsInfo } from './components/contacts/generateContactsInfo.js';
+renderContactsInfo(contactInfo);
 
 /* <----- footer -----> */
 
