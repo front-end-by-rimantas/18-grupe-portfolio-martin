@@ -98,7 +98,7 @@ import { focusOnHero } from "./components/hireMe/hireMe.js"
 /* <----- testimonials -----> */
 
 /* <----- my blogs -----> */
-
+import { renderBlogs } from "../js/components/blogs/renderBlogs.js"
 /* <----- contact me -----> */
 
 /* <----- footer -----> */
@@ -118,3 +118,6 @@ renderMobMeniu('body .menu-mob-h',header);
 renderResume('.resume .resume-grid', resume);
 // hireMe
 focusOnHero(); 
+// blogs
+import { blogsData } from "./data/blogs.js";
+renderBlogs('.blogs_block', blogsData);

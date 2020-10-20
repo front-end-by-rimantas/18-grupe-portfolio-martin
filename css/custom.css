@@ -637,8 +637,22 @@ header {
   box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
     rgba(58, 78, 95, 0.05) 0 -5px 16px;
 }
-.blogs > img {
+.blogs-bottom {
+  vertical-align: top;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 15px;
+  background-color: white;
+  margin: 15px;
+}
+img {
   max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  transform: scale(1);
+  transition: ease all 0.85s;
 }
 .blogs > span {
   width: 100%;
@@ -651,6 +665,9 @@ header {
   padding-right: 15px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+.blogs-yours > a {
+  text-decoration: none;
 }
 .blog-yours {
   margin-block-start: 1em;
@@ -666,6 +683,9 @@ header {
   padding-left: 15px;
   padding-right: 15px;
 }
+.blog-yours:hover {
+  color: #f34236;
+}
 .blogs > p {
   display: block;
   margin-block-start: 1em;
@@ -680,7 +700,8 @@ header {
   padding-right: 15px;
 }
 .blog-more {
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 16px;
   text-decoration: none;
   font-weight: 600;
   color: #f34236;
@@ -689,6 +710,9 @@ header {
   margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
+}
+.blog-more:hover {
+  color: black;
 }
 /* <----- contact me starts-----> */
 
