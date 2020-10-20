@@ -12,7 +12,8 @@ import resume from '../js/data/resume.js';
 //resume rendering function
 import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
-//import portfolioGallery from './portfolioGallery.js';
+import gallery from './data/gallery.js';
+import { renderGallery } from './components/gallery/renderGallery.js'; 
 
 /* <----- header -----> */
     const burgerDOM = document.querySelector('header .mob-menu-icon');
@@ -95,6 +96,11 @@ import { renderResume } from '../js/components/resume/renderResume.js';
 import { focusOnHero } from "./components/hireMe/hireMe.js"
 focusOnHero(); 
 /* <----- my portfolio -----> */
+new renderGallery({
+    selector: '#portfolioGallery',
+    data: gallery,
+    imagesDirectory: './img/portfolioImg/'
+});
 
 /* <----- testimonials -----> */
 
@@ -112,9 +118,7 @@ imgHover();
 // hero logic
 // about logic
 //portfolio logic
-//import ajax from './ajax.js';
 
-//ajax(portfolioGallery, '/js/data.json');
 
 // header
 renderMeniu('.header .menu-main-h',header);
