@@ -8,9 +8,9 @@ function renderMeniu(selector, header){
     for( let i = 0; i < size; i++){
         const men = header[i];
         HTML+=`<div class="progress-bar">
-        <a class="link" href="">${men.title}</a>
+        <a class="link" href="#${men.title}">${men.title}</a>
         <div class="pb"></div>
-      </div>`;
+        </div>`;
     }
     return DOM.innerHTML = HTML;
 }
