@@ -101,7 +101,7 @@ import { focusOnHero } from "./components/hireMe/hireMe.js"
 
 /* <----- contact me -----> */
 
-import { contacts } contacts from '../js/data/contacts.js';
+import { contacts } from '../js/data/contacts.js';
 
 import { renderContacts } from '../js/components/contacts/renderContacts.js';
 

@@ -1,4 +1,4 @@
-const constacts = [
+const contacts = [
     {
         mainTitle: 'CONTACT ME',
         title2: 'Drop us a line',
@@ -15,4 +15,4 @@ const constacts = [
     }
 ];
 
-export { constacts };
+export { contacts };
