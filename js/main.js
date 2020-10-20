@@ -14,6 +14,11 @@ import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
 //import portfolioGallery from './portfolioGallery.js';
 
+//testimonials
+import testimonials from "./data/testimonials.js";
+//rendering function
+import { Testimonial } from "./components/testimonials/Testimonial.js";
+
 /* <----- header -----> */
     const burgerDOM = document.querySelector('header .mob-menu-icon');
     const menuDOM = document.querySelector('body .menu');
@@ -118,3 +123,10 @@ renderMobMeniu('body .menu-mob-h',header);
 renderResume('.resume .resume-grid', resume);
 // hireMe
 focusOnHero(); 
+
+//testimonials
+
+new Testimonial({
+    selector: '.testimonials',
+    data: testimonials,
+});
