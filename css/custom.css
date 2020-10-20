@@ -50,12 +50,26 @@ header {
 }
 
 .link {
-  line-height: 70px;
+  height: 74px;
+  line-height: 74px;
   text-align: right;
   text-decoration: none;
   color: #fff;
   font-weight: bolder;
   padding-left: 20px;
+  position: relative;
+}
+
+.link:hover::before{
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  left: 0;
+  height: 5px;
+  background-color: red;
+  z-index: 200;
 }
 
 .bar {
