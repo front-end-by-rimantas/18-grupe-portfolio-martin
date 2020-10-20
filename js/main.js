@@ -12,7 +12,8 @@ import resume from '../js/data/resume.js';
 //resume rendering function
 import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
-//import portfolioGallery from './portfolioGallery.js';
+import gallery from './data/gallery.js';
+import { renderGallery } from './components/gallery/renderGallery.js'; 
 
 //testimonials
 import testimonials from "./data/testimonials.js";
@@ -99,6 +100,11 @@ import { Testimonial } from "./components/testimonials/Testimonial.js";
 /* <----- hire me -----> */
 import { focusOnHero } from "./components/hireMe/hireMe.js"
 /* <----- my portfolio -----> */
+new renderGallery({
+    selector: '#portfolioGallery',
+    data: gallery,
+    imagesDirectory: './img/portfolioImg/'
+});
 
 /* <----- testimonials -----> */
 
@@ -112,9 +118,7 @@ import { focusOnHero } from "./components/hireMe/hireMe.js"
 // hero logic
 // about logic
 //portfolio logic
-//import ajax from './ajax.js';
 
-//ajax(portfolioGallery, '/js/data.json');
 
 // header
 renderMeniu('.header .menu-main-h',header);
