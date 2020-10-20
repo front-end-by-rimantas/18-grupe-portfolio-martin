@@ -609,7 +609,7 @@ header {
         .gallery > .list > .item > .image > img {
           display: inline-block;
           width: 100%;
-          height: 350px;
+          height: 280px;
           
        }
        .gallery > .list > .item > .image > .hover {
