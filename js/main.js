@@ -93,7 +93,7 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 /* <----- my resume -----> */
 
 /* <----- hire me -----> */
-
+import { focusOnHero } from "./components/hireMe/hireMe.js"
 /* <----- my portfolio -----> */
 new renderGallery({
     selector: '#portfolioGallery',
@@ -119,4 +119,6 @@ new renderGallery({
 renderMeniu('.header .menu-main-h',header);
 renderMobMeniu('body .menu-mob-h',header);
 //resume
-renderResume('.resume .resume-grid',resume);
+renderResume('.resume .resume-grid', resume);
+// hireMe
+focusOnHero(); 
