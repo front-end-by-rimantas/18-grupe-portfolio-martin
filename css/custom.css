@@ -60,49 +60,24 @@ header {
   position: relative;
 }
 
-.link:hover::before{
+.link::after{
   display: inline-block;
   content: "";
   position: absolute;
   bottom: -29px;
-  right: 0;
-  left: 0;
   height: 3px;
   background-color: red;
-  z-index: 200;
-  animation-name: loading;
-  animation-duration: 1s;
+  left: 0%;
+  right: 100%;
+  transition: all 0.2s;
 }
-@keyframes loading {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
+ 
 
 .link:hover::after {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  bottom: -29px;
-  right: 0;
   left: 0;
-  height: 3px;
-  background-color: red;
-  z-index: 200;
-  animation-name: loading1;
-  animation-duration: 1s;
+  right: 0;
 }
-@keyframes loading1 {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
+
 
 .menu-main-h > a {
   text-align: right;
