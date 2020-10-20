@@ -566,42 +566,99 @@ header {
   right: 0;
   margin: auto;
   bottom: -10px;
+  
 }
+.gallery {
+  display: grid;
 
-.portfolioMenu {
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: normal;
-  width: 10%;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-weight: 600;
 }
-:first-of-type .portfolioMenu {
-  text-align: right;
-}
-.boxItem {
-  display: inline-block;
-  padding: 10px;
-  width: 33%;
-}
-.shadow {
-  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
-    rgba(58, 78, 95, 0.05) 0 -5px 16px;
-}
+  .galery > .filter{
+    
 
-.box {
-  box-sizing: border-box;
-  padding: 10px;
-  background-color: #ffffff;
-  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
+  }
+    .gallery > .filter > .option {
+      display: inline-block;
+      cursor: pointer;
+      margin: 60px 15px 30px;
+      color: #111111;
+      position: relative;
+      padding: 5px 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: normal;
+      
+    }
+  .gallery > .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+  }
+    .gallery > .list > .item {
+      box-sizing: border-box;
+      padding: 10px;
+      background-color: #ffffff;
+      box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
     rgba(58, 78, 95, 0.05) 0 -5px 16px;
-}
-.portfolioG3 {
-  max-width: 100%;
-}
+     }
+      .gallery > .list > .item > .image{
+        width: 100%;
+        position: relative;
+
+      }
+        .gallery > .list > .item > .image > img {
+          display: inline-block;
+          width: 100%;
+          height: 280px;
+          
+       }
+       .gallery > .list > .item > .image > .hover {
+         display: none;
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom:0;
+         left: 0;
+         background-color: rgba(17, 17, 17, 0.4) ;
+
+       }
+       .gallery > .list > .item > .image > .hover > .plus {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-image: "./img/portfolioImg/plus.png" ;
+       }
+          .gallery > .list > .item:hover > .image > .hover {
+            display: inline-block;
+
+       }
+     .gallery > .list > .item > .image > .hover > .title{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #f34236;
+      font-size: 16px;
+      padding: 20px;
+      margin: 0;
+      font-weight: 500;
+      text-align: center;
+  }
+   .gallery > .list > .item > .image > .hover > .title > a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+
+     }
+     .gallery > .list > .item > .tags {
+
+     }
+       .gallery > .list > .item > .tags > .tag {
+
+    }
+
 
 /* <----- testimonials -----> */
 
