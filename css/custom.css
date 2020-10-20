@@ -605,14 +605,6 @@ header {
 /* <----- testimonials -----> */
 
 /* <----- my blogs -----> */
-.blogs {
-  display: inline-block;
-  float: left;
-  vertical-align: top;
-  text-align: left;
-  width: 33%;
-  padding: 15px;
-}
 .blog-title {
   font-weight: 600;
   font-size: 32px;
@@ -631,8 +623,72 @@ header {
   bottom: -10px;
   margin: auto;
 }
+.blogs {
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+  text-align: left;
+  width: 30.5%;
+  padding-bottom: 15px;
+  background-color: white;
+  margin: 15px;
+  box-sizing: border-box;
+  border-collapse: separate;
+  box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px,
+    rgba(58, 78, 95, 0.05) 0 -5px 16px;
+}
 .blogs > img {
   max-width: 100%;
+}
+.blogs > span {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  color: #828282;
+  line-height: 15px;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.blog-yours {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #111111;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 600;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.blogs > p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 18px;
+  color: #828282;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.blog-more {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #f34236;
+  border-bottom: 2px solid currentColor;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 /* <----- contact me starts-----> */
 
