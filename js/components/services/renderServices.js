@@ -1,7 +1,3 @@
-//imports
-
-// params validation
-
 // logic
 function renderServices(selector, data) {
     const DOM = document.querySelector(selector);
@@ -10,7 +6,6 @@ function renderServices(selector, data) {
 
     for (let i = 0; i < size; i++) {
         const service = data[i];
-        console.log(service);
         HTML += `<div class="card">
         <i class="${service.icon}"></i>
         <p class="card-heading">${service.heading}</p>
