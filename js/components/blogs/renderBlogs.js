@@ -21,6 +21,4 @@ function renderBlogs(selector, blogsData) {
 }
 
 
-
-
 export { renderBlogs };

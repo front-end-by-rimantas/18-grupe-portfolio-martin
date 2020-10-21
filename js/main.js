@@ -108,10 +108,12 @@ new renderGallery({
 import { renderBlogs } from "../js/components/blogs/renderBlogs.js";
 import { blogsData } from "./data/blogs.js";
 import { imgHover } from "./components/blogs/blogsHover.js";
-import { focusOnHeroBlog } from "./components/blogs/blogLink.js"
+import { focusOnHeroBlog } from "./components/blogs/blogLink.js";
+import { focusOnHeroImg } from "./components/blogs/blogImgLink.js";
 renderBlogs('.blogs_block', blogsData);
 imgHover();
 focusOnHeroBlog(); 
+focusOnHeroImg();
 /* <----- contact me -----> */
 
 /* <----- footer -----> */
