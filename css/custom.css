@@ -649,6 +649,9 @@ header {
 /* <----- testimonials -----> */
 
 /* <----- my blogs -----> */
+.blog-container {
+  background-color: white;
+}
 .blog-title {
   font-weight: 600;
   font-size: 32px;
