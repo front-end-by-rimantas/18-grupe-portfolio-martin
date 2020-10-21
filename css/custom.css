@@ -714,7 +714,7 @@ line-height: 30px;
   width: 50%;
   float: left;
   padding: 10px;
-  border: #D3D8DE;
+  /* border: #D3D8DE; */
 
 }
 
@@ -748,13 +748,41 @@ line-height: 30px;
 .contactMe-button {
 display: inline-block;
 float: left;
+border: none white;
+background-color: none;
+
+
 }
+/* .btn-getInTouch{
+  margin: 0px;
+  margin-left: 5px;
+  background: white;
+} */
+
+.form.success input {
+  border-color: #2ecc71;
+}
+
+.form.error input {
+  border-color: #e74c3c;
+}
+
+.form small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.form.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
 
 .contactMe-right-column{
 display: inline-block;
 width: 35%;
 float: right;
- /* height: 420px; */
+ height: 504px;
 margin-top: 15px;
 background-color: white;
 padding-right: 15px;
