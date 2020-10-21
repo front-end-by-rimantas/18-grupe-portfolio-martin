@@ -106,7 +106,7 @@ import { renderContacts } from './components/contacts/renderContacts.js';
 renderContacts(contacts);
 
 import { contactsInfo } from './data/contactsInfo.js';
-import { renderContactsInfo } from './components/contacts/generateContactsInfo.js';
+import { renderContactsInfo } from './components/contacts/renderContactsInfo.js';
 renderContactsInfo(contactsInfo);
 
 /* <----- footer -----> */

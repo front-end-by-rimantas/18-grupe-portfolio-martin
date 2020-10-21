@@ -1,4 +1,4 @@
-import generateContactsInfo from './generateContactsInfo.js';
+import { generateContactsInfo } from './generateContactsInfo.js';
 
 function renderContactsInfo(data) {
 
@@ -6,11 +6,13 @@ function renderContactsInfo(data) {
 
     // logic
 
-    let HTML = '';
-    for (let i = 0; i < data.contactsInfo.length; i++) {
-        const contInfo = data.contactsInfo[i];
+    console.log(data);
 
-        HTML += generateContactsInfo(contsInfo);
+    let HTML = '';
+    for (let i = 0; i < data.contactInfo.length; i++) {
+        const contInfo = data.contactInfo[i];
+
+        HTML += generateContactsInfo(contInfo);
     }
 
     // console.log(HTML);
