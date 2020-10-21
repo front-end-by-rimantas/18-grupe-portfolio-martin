@@ -213,7 +213,7 @@ header {
   flex-flow: column;
   justify-content: center;
   align-content: space-between;
-  background-image: url(/img/home.jpg);
+  background-image: url(../img/home.jpg);
   background-size: cover;
   height: 100vh;
   margin-top: -71px;
@@ -425,24 +425,15 @@ header {
   border: solid 5px rgb(255, 255, 255);
   border-radius: 5px;
   box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.1);
-}
-
-@keyframes hover {
-  from {
-    transform: translatey(0px);
-  }
-  to {
-    transform: translatey(-10px);
-  }
+  transition: border 0.5s, transform 0.5s;
 }
 
 .card:hover {
   border: solid 5px rgb(255, 40, 40);
-  transition-duration: 0.9s;
-  animation: hover 0.3s ease-out forwards;
+  transform: translatey(-10px) ;
 }
 
-.container-services .fas {
+.container-services .fa {
   font-size: 60px;
   color: rgb(255, 40, 40);
 }
