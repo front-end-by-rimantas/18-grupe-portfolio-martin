@@ -31,9 +31,9 @@ class renderGalleryImage {
                             <div class="image">
                                 <img src ="${this.imagesDirectory + this.data.img}" alt= "Image">
                         
-                                <div class="hover">
-                                    <a href="#" class="plus">
-                                    <img src ="${this.imagesDirectory + this.data.plus}" alt= "Image">
+                                <div class="info">
+                                    <a href="#">
+                                    <i></i>
                                     </a>
                                     <h5 class="title">
                                         <a href="#"> ${this.data.title}</a>
