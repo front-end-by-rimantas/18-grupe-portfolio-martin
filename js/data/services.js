@@ -5,7 +5,7 @@ const services = [
         text: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.',
     },
     {
-        icon: 'fa fa-flag',
+        icon: 'fas fa-flag',
         heading: 'Logo & Identity',
         text: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.',
     },
