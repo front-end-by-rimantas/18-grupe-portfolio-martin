@@ -1,6 +1,6 @@
 function generateContactsInfo(contInfo) {
 
-    return `<div class="contactMe-box">
+  return `<div class="contactMe-box">
               <div class="contactMe-icons">
                 <a class="${contInfo.icon}" aria-hidden="true"></a>
               </div>

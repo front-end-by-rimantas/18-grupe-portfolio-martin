@@ -10,7 +10,7 @@ function renderContactsInfo(data) {
     for (let i = 0; i < data.contactInfo.length; i++) {
         const contInfo = data.contactInfo[i];
 
-        HTML += generateContactsInfo(contInfo)
+        HTML += generateContactsInfo(contInfo);
     }
 
     // console.log(HTML);
