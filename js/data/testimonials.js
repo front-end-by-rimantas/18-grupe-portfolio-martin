@@ -1,5 +1,5 @@
 const testimonials = {
-    selector: '.testimonials',
+    selector: '.slider',
     imagesPath: './img/TestimonialsImg/',
     data: [
      {

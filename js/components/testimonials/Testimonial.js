@@ -1,4 +1,4 @@
-class Testimonial {
+/*class Testimonial {
     constructor(params){
         this.selector = params.selector;
         this.data = params.data;
@@ -86,4 +86,4 @@ class Controls {
     }
 }
 
-export { Testimonial };
+export { Testimonial };*/

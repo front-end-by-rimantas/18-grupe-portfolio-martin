@@ -7,23 +7,24 @@ function renderTestimonial(params){
 
     //logic
     let HTML = '';
-    const testimonialsDOM = document.querySelector(params.selector);
+    const DOM = document.querySelector(params.selector);
     const testimonialsData = params.data;
-    console.log(testimonialsData);
 
-    const testimonialsCount = testimonialsData.length;
+    const size = testimonialsData.length;
 
-    for (let i = 0; i < testimonialsCount; i++){
+    for (let i = 0; i < size; i++){
         const testimonial = testimonialsData[i];
-        HTML += `<div class="slider">
-                        ${renderCardList(testimonial)}
-                        ${renderControls()}
-                        </div>`;
+        HTML += `<div class="list">
+                    ${renderCardList(testimonial)}
+                    ${renderControls()}
+                </div>`;
+
+               
     }
     //post logic validation
 
     //output
-    testimonialsDOM.innerHTML = HTML;
+    return DOM.innerHTML = HTML;
 }
 
 export { renderTestimonial }
