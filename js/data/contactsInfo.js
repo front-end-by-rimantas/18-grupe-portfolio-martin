@@ -1,4 +1,4 @@
-const contactInfo = {
+const contactsInfo = {
     selector: '.contactsInfo',
     contactInfo: [
         {
@@ -19,4 +19,4 @@ const contactInfo = {
     ]
 };
 
-export { contactInfo };
+export { contactsInfo };
