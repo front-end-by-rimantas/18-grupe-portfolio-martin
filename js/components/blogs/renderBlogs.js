@@ -9,10 +9,10 @@ function renderBlogs(selector, blogsData) {
     const rez = blogsData.data[i];
       html += `<div class="blogs">
       <div>
-        <img class="imghover" src="${rez.imagesPath}"></img>
+        <img class="imghover" src="${rez.imagesPath} "></img>
       </div>
         <span>${rez.date}</span>
-        <h5 class="blog-yours">${rez.linkYours}</h5>
+        <h5 class="blog-yours" href="#">${rez.linkYours}</h5>
         <p>${rez.description}</p>
         <a class="blog-more" href="#">${rez.readMore}</a>
       </div>`;
