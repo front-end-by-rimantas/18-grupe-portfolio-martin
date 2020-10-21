@@ -8,8 +8,8 @@ function renderBlogs(selector, blogsData) {
   for (let i = 0; i < size; i++) {
     const rez = blogsData.data[i];
       html += `<div class="blogs">
-      <div>
-        <img class="imghover" src="${rez.imagesPath} "></img>
+      <div class="img-blog-block">
+        <img class="imghover" src="${rez.imagesPath}" alt="blog-img"></img>
       </div>
         <span>${rez.date}</span>
         <h5 class="blog-yours" href="#">${rez.linkYours}</h5>
@@ -19,5 +19,8 @@ function renderBlogs(selector, blogsData) {
     }
   return DOM.innerHTML = html;
 }
+
+
+
 
 export { renderBlogs };

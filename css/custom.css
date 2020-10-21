@@ -674,6 +674,7 @@ header {
   display: inline-block;
   float: left;
   vertical-align: top;
+  overflow: hidden;
   text-align: left;
   width: 30.5%;
   padding-bottom: 15px;
@@ -692,6 +693,11 @@ header {
   background-color: white;
   margin: 15px;
 }
+.img-blog-block {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 img {
   max-width: 100%;
   box-sizing: border-box;
@@ -699,9 +705,11 @@ img {
   border-style: none;
   transform: scale(1);
   transition: ease all 0.85s;
+  overflow: hidden;
 }
 .imghover {
   cursor: pointer;
+  overflow: hidden;
 }
 .blogs > span {
   width: 100%;
