@@ -22,9 +22,7 @@ function generateContacts(cont) {
                 <textarea placeholder="${cont.placeholder3}" id="comment"></textarea>
                 <small>Error message</small>
               </div>
-              <div class="contactMe-button">
-                <a class="btn btn-getInTouch" href="#" target="_blank">${cont.button}</a>
-              </div>
+              <button>${cont.button}</button>
             </form>`
 };
 
