@@ -18,7 +18,9 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 //testimonials
 import testimonials from "./data/testimonials.js";
 //rendering function
-import { Testimonial } from "./components/testimonials/Testimonial.js";
+import { renderTestimonial } from "./components/testimonials/renderTestimonial.js";
+import { renderCardList } from "./components/testimonials/renderCardList.js";
+import { renderControls } from "./components/testimonials/renderControls.js";
 
 /* <----- header -----> */
     const burgerDOM = document.querySelector('header .mob-menu-icon');
@@ -129,8 +131,6 @@ renderResume('.resume .resume-grid', resume);
 focusOnHero(); 
 
 //testimonials
-
-new Testimonial({
-    selector: '.testimonials',
-    data: testimonials,
-});
+renderTestimonial(testimonials);
+renderCardList(testimonials);
+renderControls(testimonials);

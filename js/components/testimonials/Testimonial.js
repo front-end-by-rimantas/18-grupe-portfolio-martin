@@ -48,7 +48,10 @@ class Testimonial {
     }
 
     render(){
-        this.cardList = new CardList();
+        this.cardList = new CardList({
+            data: this.data;
+            console.log(this.data);
+        });
         this.controls = new Controls();
 
         const HTML = `<div class="slider">
