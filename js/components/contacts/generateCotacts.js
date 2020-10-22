@@ -7,22 +7,28 @@ function generateContacts(cont) {
             <p class="contactMe-secondLine">${cont.title3}</p>
             <i></i>
 
-            <form class="form" id="contact-form">
+            <form class="form" id="form">
               <div class="contactMe-form-row">
                 <input type="text" placeholder="${cont.placeholder1}" id="contactName">
+                <i class="fa fa-check-circle"></i>
+		          	<i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
               </div>
 
               <div class="contactMe-form-row">
                 <input type="email" placeholder="${cont.placeholder2}" id="email">
+                <i class="fa fa-check-circle"></i>
+		          	<i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
               </div>
 
               <div class="contactMe-form-row last-row">
                 <textarea placeholder="${cont.placeholder3}" id="comment"></textarea>
+                <i class="fa fa-check-circle"></i>
+		          	<i class="fa fa-exclamation-circle"></i>
                 <small>Error message</small>
               </div>
-              <button>${cont.button}</button>
+              <button>Submit</button>
             </form>`
 };
 

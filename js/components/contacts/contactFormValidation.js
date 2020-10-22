@@ -1,20 +1,15 @@
-// import { contacts } from `./data/contacts.js`;
 
-// function contactFormValidation(contacts) {
-
-let form = document.getElementById('contact-form')
-let name = document.getElementById('contactName');
-let email = document.getElementById('email').value;
-let comment = document.getElementById('comment');
-// let pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const form = document.getElementById('form')
+const name = document.getElementById('contactName');
+const email = document.getElementById('email');
+const comment = document.getElementById('comment');
 
 
-
-form.addEventListener('GET IN TOUCH', (e) => {
-    e.preventDefault();
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
     checkInputs();
-})
+});
 
 function checkInputs() {
 
@@ -22,45 +17,53 @@ function checkInputs() {
     const emailValue = email.value.trim();
     const commentValue = comment.value.trim();
 
-    if (nameValue === "") {
-        setErrorFor(contactName, 'Name can not be blank');
+    if (nameValue === '') {
+        setErrorFor(name, 'Name can not be blank');
     } else {
-        setSuccessFor(contactName);
-    },
+        setSuccessFor(name);
 
-    if (emailValue === "") {
-        setErrorFor(email, 'Email can not be blank');
-    } else if (!isEmail(emailValue)) {
-        setErrorFor(email, `Email is not valid`)
-    } else {
-        setSuccessFor(email)
-    },
 
-    if (commentValue === "") {
-        setErrorFor(contactName, 'Comment section can not be blank');
-    } else {
-        setSuccessFor(commentValue);
+        if (emailValue === '') {
+            setErrorFor(email, 'Email can not be blank');
+        } else if (!isEmail(emailValue)) {
+            setErrorFor(email, 'Email is not valid')
+        } else {
+            setSuccessFor(email);
+        }
+
+        if (commentValue === '') {
+            setErrorFor(comment, 'Comment section can not be blank');
+        } else {
+            setSuccessFor(comment);
+        }
     }
-}
 
 
+    function setErrorFor(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+        formControl.className = 'contactMe-form-row error';
+        small.innerText = message;
 
-function setErrorFor(input, message) {
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small');
-    formControl.className = 'form error';
-    small.innerText = message;
+    }
 
-}
+    function setSuccessFor(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'contactMe-form-row success';
+    }
 
-function setSuccessFor(input) {
-    const formControl = input.parentElement;
-    formControl.className = 'form success';
-}
+    function isEmail(email) {
+        return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
+    }
 
-function isEmail(email) {
-    return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
-}
+
+// // function contactFormValidation(contacts) {
+// let form = document.getElementById('contact-form')
+// let name = document.getElementById('contactName');
+// let email = document.getElementById('email');
+// let comment = document.getElementById('comment');
+// // let pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
 
     //     if (contacts.name.value === "" || contatcs.email.value === "" || contatcs.comment.value === "") {
     //         alert("No blank values allowed")

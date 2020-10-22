@@ -715,6 +715,7 @@ line-height: 30px;
   float: left;
   padding: 10px;
   /* border: #D3D8DE; */
+  position: relative;
 
 }
 
@@ -753,26 +754,58 @@ background-color: none;
 
 
 }
-/* .btn-getInTouch{
+.btn-getInTouch{
   margin: 0px;
   margin-left: 5px;
   background: white;
-} */
+}
 
-.form.success input {
+.contactMe-form-row > i {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  visibility: hidden;
+  font-size: 30px
+}
+
+.contactMe-form-row.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.contactMe-form-row.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+.contactMe-form-row input:focus{
+  outline: 0;
+  border-color: #777;;
+}
+
+
+.contactMe-form-row.success input {
   border-color: #2ecc71;
 }
 
-.form.error input {
+.contactMe-form-row.error input {
   border-color: #e74c3c;
 }
 
-.form small {
-  color: #e74c3c;
+.contactMe-form-row > small {
+  display: inline-block;
+  float: left;
   visibility: hidden;
 }
 
-.form.error small {
+.contactMe-form-row.success > small {
+  color: #2ecc71;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: visible;
+}
+
+.contactMe-form-row.error > small {
   color: #e74c3c;
   visibility: visible;
 }
