@@ -109,6 +109,7 @@ import { contactsInfo } from './data/contactsInfo.js';
 import { renderContactsInfo } from './components/contacts/renderContactsInfo.js';
 renderContactsInfo(contactsInfo);
 
+
 /* <----- footer -----> */
 
 // header logic

@@ -1,23 +1,24 @@
 
+
 const form = document.getElementById('form')
-const name = document.getElementById('contactName');
+const name = document.getElementById('name');
 const email = document.getElementById('email');
 const comment = document.getElementById('comment');
 
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    checkInputs();
+    contactFormValidation();
 });
 
-function checkInputs() {
+function contactFormValidation() {
 
-    const nameValue = contactName.value.trim();
+    const nameValue = name.value.trim();
     const emailValue = email.value.trim();
     const commentValue = comment.value.trim();
 
-    if (nameValue === '') {
+    if (nameValue === '' || nameValue === null) {
         setErrorFor(name, 'Name can not be blank');
     } else {
         setSuccessFor(name);
@@ -40,49 +41,20 @@ function checkInputs() {
 
 
     function setErrorFor(input, message) {
-        const formControl = input.parentElement;
+        const formControl = input.nextElementSibling;
         const small = formControl.querySelector('small');
         formControl.className = 'contactMe-form-row error';
-        small.innerText = message;
-
+        small.nextElementSibling.innerText = message;
     }
 
     function setSuccessFor(input) {
-        const formControl = input.parentElement;
-        formControl.className = 'contactMe-form-row success';
+        const formControl = input.nextElementSibling;
+        formControl.nextElementSibling.className = 'contactMe-form-row success';
     }
 
     function isEmail(email) {
         return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
     }
+};
 
-
-// // function contactFormValidation(contacts) {
-// let form = document.getElementById('contact-form')
-// let name = document.getElementById('contactName');
-// let email = document.getElementById('email');
-// let comment = document.getElementById('comment');
-// // let pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-
-    //     if (contacts.name.value === "" || contatcs.email.value === "" || contatcs.comment.value === "") {
-    //         alert("No blank values allowed")
-    //     }
-    //     else {
-    //     };
-
-
-    //     if (contatcs.email.match(pattern)) {
-    //         form.classList.add("Valid");
-    //         form.classList.remove("Invalid");
-
-    //     }
-    //     else {
-    //         form.classList.remove("Valid");
-    //         form.classList.add("Inalid");
-    //         alert('Your email is invalid');
-    //     };
-    // }
-
-    // export { contactFormValidation };
-
+export { contactFormValidation }
