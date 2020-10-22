@@ -31,3 +31,5 @@ export default generateContacts;
 {/* <div class="contactMe-button">
   <a class="btn btn-getInTouch" href="#" target="_blank">${cont.button}</a>
 </div> */}
+
+// neveikia su div button
