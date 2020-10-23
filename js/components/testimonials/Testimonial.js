@@ -6,6 +6,7 @@ class Testimonial {
         this.selector = params.selector;
         this.data = params.data;
         this.imagesPath = params.imagesPath;
+        this.maxItems = 4;
         
         this.DOM = null;
         this.cardListObj = null;
@@ -57,16 +58,19 @@ class Testimonial {
     
         const cardListDOM = this.DOM.querySelector('.slider');
         const constrolsDOM = this.DOM.querySelector('.controls');
+        const itemsCount = this.data.length > this.maxItems ? this.maxItems : this.data.length;
 
         this.cardListObj = new CardList({
             DOM: cardListDOM,
             data: this.data,
-            imagesPath: this.imagesPath
+            imagesPath: this.imagesPath,
+            itemsCount: itemsCount
         });
 
         this.controlsObj = new Controls({
             DOM: constrolsDOM,
-            data: this.data
+            data: this.data,
+            itemsCount: itemsCount
         });
          const HTML = `<div class="slider">
          ${this.cardListObj.render()}

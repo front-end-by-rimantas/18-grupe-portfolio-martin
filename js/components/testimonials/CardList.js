@@ -3,13 +3,16 @@ class CardList {
         this.DOM = params.DOM;
         this.data = params.data;
         this.imagesPath = params.imagesPath;
+        this.itemsCount = params.itemsCount;
+        console.log(this.itemsCount);
     }
 
 
     render(){
         let HTML = '';
 
-        for ( let item of this.data){
+        for ( let i=0; i<this.itemsCount; i++){
+            const item = this.data[i];
             let photo = item.photo;
             let paragraph = item.paragraph;
             let title = item.title;
