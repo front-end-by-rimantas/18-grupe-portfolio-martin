@@ -1,4 +1,4 @@
-
+// import { generateContacts } from `./generateCotacts.js`
 
 const form = document.getElementById('form')
 const name = document.getElementById('name');
@@ -37,14 +37,17 @@ function contactFormValidation() {
         } else {
             setSuccessFor(comment);
         }
+
     }
 
 
     function setErrorFor(input, message) {
         const formControl = input.nextElementSibling;
+        // const formControl = input.parentElement;
         const small = formControl.querySelector('small');
         formControl.className = 'contactMe-form-row error';
         small.nextElementSibling.innerText = message;
+        // small.parentElement.innerText = message;
     }
 
     function setSuccessFor(input) {
