@@ -6,6 +6,7 @@ class Testimonial {
         this.selector = params.selector;
         this.data = params.data;
         this.imagesPath = params.imagesPath;
+        
         this.DOM = null;
         this.cardListObj = null;
         this.controlsObj = null;
@@ -50,16 +51,10 @@ class Testimonial {
         this.DOM = DOM;
         return true;
     }
-    generateHTML(){
-        return `<div class="slider">
-                ${CardList}
-                ${Controls}
-                </div>`;
 
-    }
 
     render(){
-        this.DOM.innerHTML = this.generateHTML();
+    
         const cardListDOM = this.DOM.querySelector('.slider');
         const constrolsDOM = this.DOM.querySelector('.controls');
 
@@ -73,6 +68,12 @@ class Testimonial {
             DOM: constrolsDOM,
             data: this.data
         });
+         const HTML = `<div class="slider">
+         ${this.cardListObj.render()}
+         ${this.controlsObj.render()}
+         </div>`;
+
+         this.DOM.innerHTML=HTML;
  
     }
 }

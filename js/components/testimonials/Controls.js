@@ -5,7 +5,7 @@ class Controls {
         this.currentlyActive = 0;
     }
     render(){
-        return `<div class="controls">...</div>`;
+        return `<div class="controls"></div>`;
     }
   /*  showNext(step = 1){
         this.currentlyActive+=step;

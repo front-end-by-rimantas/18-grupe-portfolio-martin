@@ -3,12 +3,10 @@ class CardList {
         this.DOM = params.DOM;
         this.data = params.data;
         this.imagesPath = params.imagesPath;
-        
-        this.render();
     }
 
 
-    generateHTML(){
+    render(){
         let HTML = '';
 
         for ( let item of this.data){
@@ -27,9 +25,6 @@ class CardList {
         return `<div class="list">
                 ${HTML}
                 </div>`;
-    }
-    render(){
-        this.DOM.innerHTML = this.generateHTML();
     }
 }
 
