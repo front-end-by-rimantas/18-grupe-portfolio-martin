@@ -25,6 +25,7 @@ class Testimonial {
         //jei taip,tuomet generuoja turini
         this.render();
         //kai sugeneruoja, prideda eventlistener
+        this.controlsObj.addEvents();
 
     }
 
@@ -56,19 +57,16 @@ class Testimonial {
 
     render(){
     
-        const cardListDOM = this.DOM.querySelector('.slider');
-        const constrolsDOM = this.DOM.querySelector('.controls');
         const itemsCount = this.data.length > this.maxItems ? this.maxItems : this.data.length;
 
         this.cardListObj = new CardList({
-            DOM: cardListDOM,
             data: this.data,
             imagesPath: this.imagesPath,
             itemsCount: itemsCount
         });
 
         this.controlsObj = new Controls({
-            DOM: constrolsDOM,
+            parentDOM: this.DOM,
             data: this.data,
             itemsCount: itemsCount
         });
