@@ -1,10 +1,14 @@
-/*class Testimonial {
+import { Controls } from './Controls.js';
+import { CardList } from './CardList.js';
+
+class Testimonial {
     constructor(params){
         this.selector = params.selector;
         this.data = params.data;
+        this.imagesPath = params.imagesPath;
         this.DOM = null;
-        this.cardList = null;
-        this.controls = null;
+        this.cardListObj = null;
+        this.controlsObj = null;
         //iskvieciama funkcija
         this.init();
     }
@@ -46,44 +50,31 @@
         this.DOM = DOM;
         return true;
     }
+    generateHTML(){
+        return `<div class="slider">
+                ${CardList}
+                ${Controls}
+                </div>`;
+
+    }
 
     render(){
-        this.cardList = new CardList({
-            data: this.data;
-            console.log(this.data);
+        this.DOM.innerHTML = this.generateHTML();
+        const cardListDOM = this.DOM.querySelector('.slider');
+        const constrolsDOM = this.DOM.querySelector('.controls');
+
+        this.cardListObj = new CardList({
+            DOM: cardListDOM,
+            data: this.data,
+            imagesPath: this.imagesPath
         });
-        this.controls = new Controls();
 
-        const HTML = `<div class="slider">
-                        ${this.cardList.render()}
-                        ${this.controls.render()}
-                        </div>`;
-        
-        this.DOM.innerHTML = HTML;    
+        this.controlsObj = new Controls({
+            DOM: constrolsDOM,
+            data: this.data
+        });
+ 
     }
 }
 
-class CardList {
-    constructor(params){
-        console.log(params);
-    }
-    render(){
-        return `<div class="list">slider item</div>`;
-    }
-}
-class Controls {
-    constructor(params){
-        this.currentlyActive = 0;
-    }
-    render(){
-        return `<div class="controls">...</div>`;
-    }
-    showNext(step = 1){
-        this.currentlyActive+=step;
-    }
-    showPrevious(step = 1){
-        this.currentlyActive-=step;
-    }
-}
-
-export { Testimonial };*/
+export { Testimonial };

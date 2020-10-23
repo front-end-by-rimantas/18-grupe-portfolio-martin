@@ -26,6 +26,13 @@ main {
   grid-column: 2 / 3;
 }
 
+.container-t {
+  display: grid;
+  grid-template-columns: 1fr 510px 1fr;
+}
+.container-t > .row {
+  grid-column: 2 / 3;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1140px 1fr;
@@ -73,5 +80,8 @@ body > footer {
   }
   .resume .resume-grid {
     grid-template-columns: 100%;
+  }
+  .container-t {
+    grid-template-columns: 15px 1fr 15px;
   }
 }

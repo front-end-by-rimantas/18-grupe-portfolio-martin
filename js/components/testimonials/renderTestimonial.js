@@ -1,4 +1,4 @@
-import { renderCardList } from "./renderCardList.js";
+/*import { renderCardList } from "./renderCardList.js";
 import { renderControls } from "./renderControls.js";
 
 function renderTestimonial(params){
@@ -14,13 +14,15 @@ function renderTestimonial(params){
 
     for (let i = 0; i < size; i++){
         const testimonial = testimonialsData[i];
-        HTML += `<div class="list">
-                    ${renderCardList(testimonial)}
-                    ${renderControls()}
-                </div>`;
+        HTML += `${renderCardList(testimonial)}`;
 
                
     }
+    console.log(HTML);
+    HTML += `${renderControls()}
+    ${renderControls()}
+    ${renderControls()}
+    ${renderControls()}`;
     //post logic validation
 
     //output
