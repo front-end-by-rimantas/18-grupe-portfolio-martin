@@ -7,6 +7,10 @@ import { renderMobMeniu } from '../js/components/header/renderMobMeniu.js';
 // hero import
 // about import
 
+import { about } from '../js/data/about.js';
+import { renderAbout } from '../js/components/about/renderAbout.js';
+renderAbout(about);
+
 // resume import
 import resume from '../js/data/resume.js';
 //resume rendering function

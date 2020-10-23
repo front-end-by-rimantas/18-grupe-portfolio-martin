@@ -6,7 +6,6 @@ function renderContactsInfo(data) {
 
     // logic
 
-    console.log(data);
 
     let HTML = '';
     for (let i = 0; i < data.contactInfo.length; i++) {
