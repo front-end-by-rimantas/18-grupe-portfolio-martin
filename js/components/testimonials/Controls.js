@@ -8,11 +8,10 @@ class Controls {
     }
     render(){
         return `<div class="controls">
-                <div class="buble active">B</div>
-                
+                <div class="bubble active"></div>${`<div class="bubble"></div>`.repeat(this.itemsCount-1)}
                 </div>`;
     }
-  /*  showNext(step = 1){
+   /* showNext(step = 1){
         this.currentlyActive+=step;
     }
     showPrevious(step = 1){

@@ -18,7 +18,7 @@ class CardList {
             let title = item.title;
             let label = item.label;
 
-            HTML += `<div class="slider-list">
+            HTML += `<div class="item">
                     <img src="${item.photo}" alt="Photo">
                     <p>${item.paragraph}</p>
                     <h5>${item.title}</h5>
