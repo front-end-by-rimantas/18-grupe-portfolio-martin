@@ -107,11 +107,13 @@ import { focusOnHero } from "./components/hireMe/hireMe.js"
 
 import { contacts } from './data/contacts.js';
 import { renderContacts } from './components/contacts/renderContacts.js';
+import { contactFormValidationEvent } from './components/contacts/contactFormValidation.js';
 renderContacts(contacts);
 
 import { contactsInfo } from './data/contactsInfo.js';
 import { renderContactsInfo } from './components/contacts/renderContactsInfo.js';
 renderContactsInfo(contactsInfo);
+contactFormValidationEvent();
 
 
 /* <----- footer -----> */

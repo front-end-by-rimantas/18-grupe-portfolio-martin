@@ -1,18 +1,21 @@
 // import { generateContacts } from `./generateCotacts.js`
 
-const form = document.getElementById('form')
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const comment = document.getElementById('comment');
 
+function contactFormValidationEvent() {
+    const form = e.target.querySelector('#form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        console.log(e);
+        const name = e.target.querySelector('#name');
+        const email = e.target.querySelector('#email');
+        const comment = e.target.querySelector('#comment');
+        contactFormValidation(name, email, comment);
+    });
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+}
 
-    contactFormValidation();
-});
-
-function contactFormValidation() {
+function contactFormValidation(name, email, comment) {
+    console.log('labas');
 
     const nameValue = name.value.trim();
     const emailValue = email.value.trim();
@@ -60,4 +63,4 @@ function contactFormValidation() {
     }
 };
 
-export { contactFormValidation }
+export { contactFormValidationEvent }
