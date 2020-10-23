@@ -6,6 +6,9 @@ import { renderMobMeniu } from '../js/components/header/renderMobMeniu.js';
 
 // hero import
 // about import
+import { about } from '../js/data/about.js';
+import { renderAbout } from '../js/components/about/renderAbout.js';
+renderAbout(about);
 
 // resume import
 import resume from '../js/data/resume.js';
@@ -13,59 +16,59 @@ import resume from '../js/data/resume.js';
 import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
 import gallery from './data/gallery.js';
-import { renderGallery } from './components/gallery/renderGallery.js'; 
+import { renderGallery } from './components/gallery/renderGallery.js';
 
 /* <----- header -----> */
-    const burgerDOM = document.querySelector('header .mob-menu-icon');
-    const menuDOM = document.querySelector('body .menu');
-    const bodyDOM = document.querySelector('main');
-    //
-    burgerDOM.addEventListener('click', () => {
-        //susirandame artimiausia tevini elementa div
-  
-            menuDOM.classList.toggle('show');
-        //uzsideda ant burger icon spalva
-            burgerDOM.classList.add('new');
+const burgerDOM = document.querySelector('header .mob-menu-icon');
+const menuDOM = document.querySelector('body .menu');
+const bodyDOM = document.querySelector('main');
+//
+burgerDOM.addEventListener('click', () => {
+    //susirandame artimiausia tevini elementa div
 
-    });
+    menuDOM.classList.toggle('show');
+    //uzsideda ant burger icon spalva
+    burgerDOM.classList.add('new');
+
+});
 //izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
-    bodyDOM.addEventListener('click', () => {
+bodyDOM.addEventListener('click', () => {
     burgerDOM.classList.remove('new');
-    
-    });
+
+});
 
 /* kai scrolini pasikeicia header fonas */
-    const activDOM = document.querySelector('.header');
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction(){
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
-            activDOM.classList.add("active");
-        } else{
-            activDOM.classList.remove("active");
-        }
-    };
+const activDOM = document.querySelector('.header');
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        activDOM.classList.add("active");
+    } else {
+        activDOM.classList.remove("active");
+    }
+};
 
 
 
 /* uzdedamas progress bar ant meniu */
-  
- /*   function bar(){
-        const pbDOM = document.querySelectorAll('header .link');
-        const barDOM = document.querySelector('body .pb');
-        for (let i=0; i < pbDOM.lenght; i++)
-        {   const allpb = pbDOM[i];
-            console.log('pbDOM[i]');
-            allpb.addEventListener('pointerenter', () => {
-                barDOM.classList.remove('barafter'); 
-                    barDOM.classList.add('bar'); 
-            });
-            
-            allpb.addEventListener('pointerleave', () => {
-                barDOM.classList.remove('bar'); 
-                barDOM.classList.add('barafter'); 
-            })
-        }
-    };*/
+
+/*   function bar(){
+       const pbDOM = document.querySelectorAll('header .link');
+       const barDOM = document.querySelector('body .pb');
+       for (let i=0; i < pbDOM.lenght; i++)
+       {   const allpb = pbDOM[i];
+           console.log('pbDOM[i]');
+           allpb.addEventListener('pointerenter', () => {
+               barDOM.classList.remove('barafter'); 
+                   barDOM.classList.add('bar'); 
+           });
+           
+           allpb.addEventListener('pointerleave', () => {
+               barDOM.classList.remove('bar'); 
+               barDOM.classList.add('barafter'); 
+           })
+       }
+   };*/
 
 /* progress bar
     const pbDOM = document.querySelector('header .link');
@@ -94,7 +97,7 @@ import { renderGallery } from './components/gallery/renderGallery.js';
 
 /* <----- hire me -----> */
 import { focusOnHero } from "./components/hireMe/hireMe.js"
-focusOnHero(); 
+focusOnHero();
 /* <----- my portfolio -----> */
 new renderGallery({
     selector: '#portfolioGallery',
@@ -112,7 +115,7 @@ import { focusOnHeroBlog } from "./components/blogs/blogLink.js";
 import { focusOnHeroImg } from "./components/blogs/blogImgLink.js";
 renderBlogs('.blogs_block', blogsData);
 imgHover();
-focusOnHeroBlog(); 
+focusOnHeroBlog();
 focusOnHeroImg();
 /* <----- contact me -----> */
 
@@ -125,7 +128,7 @@ focusOnHeroImg();
 
 
 // header
-renderMeniu('.header .menu-main-h',header);
-renderMobMeniu('body .menu-mob-h',header);
+renderMeniu('.header .menu-main-h', header);
+renderMobMeniu('body .menu-mob-h', header);
 //resume
 renderResume('.resume .resume-grid', resume);
