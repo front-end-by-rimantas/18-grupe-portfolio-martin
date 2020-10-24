@@ -16,7 +16,7 @@ class Testimonial {
     }
     
     //viena funkcija daro viena darba,init jas iskviecia
-    init(){
+    init = () =>{
         //patikrina ar egzistuoja nurodytas selector
         //jei nera validus selector
         if(!this.isValidSelector()){
@@ -30,7 +30,7 @@ class Testimonial {
     }
 
     //selectoriaus validacija
-    isValidSelector(){
+    isValidSelector = () => {
         //apskritai neegzistuoja
         if (this.selector === undefined){
             //throw nutraukia funkcija
@@ -55,7 +55,7 @@ class Testimonial {
     }
 
 
-    render(){
+    render = () => {
     
         const itemsCount = this.data.length > this.maxItems ? this.maxItems : this.data.length;
 
@@ -68,7 +68,8 @@ class Testimonial {
         this.controlsObj = new Controls({
             parentDOM: this.DOM,
             data: this.data,
-            itemsCount: itemsCount
+            itemsCount: itemsCount,
+            number: this.updateSliderList
         });
          const HTML = `<div class="slider">
          ${this.cardListObj.render()}
@@ -77,6 +78,10 @@ class Testimonial {
 
          this.DOM.innerHTML=HTML;
  
+    }
+
+    updateSliderList = (diff) => {
+        this.cardListObj.shiftList(diff);
     }
 }
 

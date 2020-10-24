@@ -8,7 +8,7 @@ class CardList {
     }
 
 
-    render(){
+    render = () => {
         let HTML = '';
 
         for ( let i=0; i<this.itemsCount; i++){
@@ -28,6 +28,9 @@ class CardList {
         return `<div class="list">
                 ${HTML}
                 </div>`;
+    }
+    shiftList = (diff) => {
+
     }
 }
 

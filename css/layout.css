@@ -82,6 +82,11 @@ body > footer {
     grid-template-columns: 100%;
   }
   .container-t {
+    grid-template-columns: 1fr 510px 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .container-t {
     grid-template-columns: 15px 1fr 15px;
   }
 }

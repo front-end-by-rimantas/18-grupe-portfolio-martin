@@ -665,8 +665,7 @@ header {
 .slider{
   overflow: hidden;
   display: inline-block;
-  width: calc(100% + 40px);
-  margin-left: -20px;
+  width: 100%;
 }
 
 .slider > .list{
