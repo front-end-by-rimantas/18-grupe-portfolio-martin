@@ -2,9 +2,8 @@ class Controls {
     constructor(params){
         this.parentDOM = params.parentDOM;
         this.bubblesDOM = null;
-        this.data = params.data;
         this.itemsCount = params.itemsCount;
-        this.number = params.number;
+        this.updateSliderList = params.updateSliderList;
 
         this.currentlyActive = 0;
     }
@@ -37,10 +36,8 @@ class Controls {
                 const newIndex = parseInt(bubble.dataset.index);
                 const diff = newIndex - this.currentlyActive;
                 this.currentlyActive = newIndex;
-
-                console.log('juda:', diff);
-
-                this.number(diff);
+                
+                this.updateSliderList(diff);
             });
         }
     }

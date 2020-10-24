@@ -4,7 +4,8 @@ class CardList {
         this.data = params.data;
         this.imagesPath = params.imagesPath;
         this.itemsCount = params.itemsCount;
-        console.log(this.itemsCount);
+        this.listDOM = null;
+
     }
 
 
@@ -25,14 +26,16 @@ class CardList {
                     <label>${item.label}</label>
                     </div>`;
         }
-        return `<div class="list">
+        return `<div class="list" style="margin-left:0;">
                 ${HTML}
                 </div>`;
     }
     shiftList = (diff) => {
-
+        this.listDOM.style.marginLeft = parseFloat(this.listDOM.style.marginLeft) - diff * 100 + '%';
+        console.log(this.listDOM.style.marginLeft);
     }
 }
+
 
 
 export { CardList };
