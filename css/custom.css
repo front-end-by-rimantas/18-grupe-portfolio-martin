@@ -672,6 +672,7 @@ header {
   display: inline-block;
   float: left;
   width: calc(100% * var(--item-count) / var(--item-par-view));
+  transition: all 1s;
 
 }
 .slider > .list > .item{
