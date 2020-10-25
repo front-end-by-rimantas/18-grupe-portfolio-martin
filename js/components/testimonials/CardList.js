@@ -32,7 +32,7 @@ class CardList {
     }
     shiftList = (diff) => {
         this.listDOM.style.marginLeft = parseFloat(this.listDOM.style.marginLeft) - diff * 100 + '%';
-        console.log(this.listDOM.style.marginLeft);
+
     }
 }
 
