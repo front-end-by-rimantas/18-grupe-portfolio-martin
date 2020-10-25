@@ -1,5 +1,5 @@
 //imports
-import { renderGalleryFilterItem } from './renderGalleryFilterItem.js';
+//import { renderGalleryFilterItem } from './renderGalleryFilterItem.js';
 // params validation
 
 // logic
@@ -9,48 +9,66 @@ import { renderGalleryFilterItem } from './renderGalleryFilterItem.js';
 // output
 class renderGalleryFilter {
     constructor(params) {
-        this.parentDOM = params.parentDOM;
+        this.DOM = params.DOM;
         this.data = params.data;
-        this.tags = [];
-        this.DOM = null;
-console.log(this.data);
+        this.PARENT = params.PARENT;
+        
+        //this.tags = [];
+    
         this.init();   
     }
 // ciklas konstruoja po viena boxika portfolio galerry.
 //  item identifikuoja viena objektuka is data failo
     init(){
         this.render();
-        this.filterTags();
-
-        for ( const tag of this.tags) {
-            new renderGalleryFilterItem({
-                parentDOM: this.DOM,
-                data: tag
-            });
-        }
-        
-        this.addEvents(); 
+        this.addEvents();
     }
 
-    filterTags() {
-        for (const item of this.data) {
-            for (const tag of item.tags){
-                if (!this.tags.includes(tag)) {
-                this.tags.push(tag);
-                }
-            }
-        }
-        console.log(this.tags);
+    generateHTML() {
+        let HTML = '';
+
+         // isrinkta is visu darbu tagu sarasai i viena bendra
+         const tags = [];
+         for (let item of this.data) {
+             tags.push(item.tags);
+         }
+ 
+         // surinkti tik unikaliu tagu sarasa
+         const uniqueTags = [];
+         for (let i = 0; i < tags.length; i++) {
+             const vidinisArray = tags[i];
+             for (let k = 0; k < vidinisArray.length; k++) {
+                 const tag = vidinisArray[k];
+                 if (!uniqueTags.includes(tag)) {
+                     uniqueTags.push(tag);
+                 }
+             }
+         }
+ 
+         // generuojame HTML
+         HTML += `<div class="tag actives">All</div>`;
+         for (let tag of uniqueTags) {
+             HTML += `<div class="tag">${tag}</div>`;
+         }
+ 
+         return HTML;
+     }
+
+    render() {
+        this.DOM.innerHTML = this.generateHTML();
     }
-     
+
+             
     addEvents(){
+        const tagsDOM = this.DOM.querySelectorAll('.tag');
 
-    }    
-
-     render() {
-        this.parentDOM.insertAdjacentHTML('beforeend', `<div class="filter"></div>`);
-        this.DOM = this.parentDOM.querySelector('.filter');
+        for (let tag of tagsDOM) {
+            tag.addEventListener('click', () => {
+                this.PARENT.contentUpdate(tag.innerText);
+            })
+        }
     }
 }
+    
 
 export { renderGalleryFilter };
