@@ -7,6 +7,9 @@ import { renderHeaderEvents } from '../js/components/header/renderHeaderEvents.j
 
 // hero import
 // about import
+import { about } from '../js/data/about.js';
+import { renderAbout } from '../js/components/about/renderAbout.js';
+renderAbout(about);
 
 //* resume import
 import resume from '../js/data/resume.js';
@@ -14,7 +17,7 @@ import resume from '../js/data/resume.js';
 import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
 import gallery from './data/gallery.js';
-import { renderGallery } from './components/gallery/renderGallery.js'; 
+import { renderGallery } from './components/gallery/renderGallery.js';
 
 //testimonials
 import testimonials from "./data/testimonials.js";
@@ -32,7 +35,7 @@ import { Testimonial } from "./components/testimonials/Testimonial.js";
 
 /* <----- hire me -----> */
 import { focusOnHero } from "./components/hireMe/hireMe.js"
-focusOnHero(); 
+focusOnHero();
 /* <----- my portfolio -----> */
 new renderGallery({
     selector: '#portfolioGallery',
@@ -50,9 +53,19 @@ import { focusOnHeroBlog } from "./components/blogs/blogLink.js";
 import { focusOnHeroImg } from "./components/blogs/blogImgLink.js";
 renderBlogs('.blogs_block', blogsData);
 imgHover();
-focusOnHeroBlog(); 
+focusOnHeroBlog();
 focusOnHeroImg();
 /* <----- contact me -----> */
+
+import { contacts } from './data/contacts.js';
+import { renderContacts } from './components/contacts/renderContacts.js';
+import { contactFormValidationEvent } from './components/contacts/contactFormValidation.js';
+renderContacts(contacts);
+
+import { contactsInfo } from './data/contactsInfo.js';
+import { renderContactsInfo } from './components/contacts/renderContactsInfo.js';
+renderContactsInfo(contactsInfo);
+contactFormValidationEvent();
 
 /* <----- footer -----> */
 
