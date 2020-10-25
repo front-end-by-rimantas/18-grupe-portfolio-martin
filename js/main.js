@@ -32,6 +32,7 @@ import { Testimonial } from "./components/testimonials/Testimonial.js";
 
 /* <----- hire me -----> */
 import { focusOnHero } from "./components/hireMe/hireMe.js"
+focusOnHero(); 
 /* <----- my portfolio -----> */
 new renderGallery({
     selector: '#portfolioGallery',
@@ -42,7 +43,15 @@ new renderGallery({
 /* <----- testimonials -----> */
 
 /* <----- my blogs -----> */
-
+import { renderBlogs } from "../js/components/blogs/renderBlogs.js";
+import { blogsData } from "./data/blogs.js";
+import { imgHover } from "./components/blogs/blogsHover.js";
+import { focusOnHeroBlog } from "./components/blogs/blogLink.js";
+import { focusOnHeroImg } from "./components/blogs/blogImgLink.js";
+renderBlogs('.blogs_block', blogsData);
+imgHover();
+focusOnHeroBlog(); 
+focusOnHeroImg();
 /* <----- contact me -----> */
 
 /* <----- footer -----> */
