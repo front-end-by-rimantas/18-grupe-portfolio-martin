@@ -582,11 +582,28 @@ header {
       font-size: 14px;
       line-height: normal;
       
+    }.gallery > .filter > .tag:hover {
+      color: red;
     }
-    .gallery > .filter > .actives {
+    /* .gallery > .filter > .tag::after {
+      content:"";
+				width: 0px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				height: 2px;
+				background: red;
+				position: absolute;
+				transition(ease all 0.55s); */
+    /*}
+    .gallery > .filter > .tag > .actives {
       color:red;
-            
     }
+     .gallery > .filter > .tag > .actives::after {
+      transform: scale(1);
+      width: 100%;
+     } */
   .gallery > .list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

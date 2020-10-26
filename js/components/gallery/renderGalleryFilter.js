@@ -46,7 +46,7 @@ class renderGalleryFilter {
          }
  
          // generuojame HTML
-         HTML += `<div class="tag actives">All</div>`;
+         HTML += `<div class="tag">All</div>`;
          for (let tag of uniqueTags) {
              HTML += `<div class="tag">${tag}</div>`;
          }
@@ -65,7 +65,7 @@ class renderGalleryFilter {
         for (let tag of tagsDOM) {
             tag.addEventListener('click', () => {
                 this.PARENT.contentUpdate(tag.innerText);
-            })
+        });
         }
     }
 }
