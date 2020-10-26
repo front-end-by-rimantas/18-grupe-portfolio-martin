@@ -16,8 +16,9 @@ import resume from '../js/data/resume.js';
 //resume rendering function
 import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
-import gallery from './data/gallery.js';
-import { renderGallery } from './components/gallery/renderGallery.js';
+
+import { portfolioData } from './data/gallery.js';
+import { renderGallery } from './components/gallery/renderGallery.js'; 
 
 //testimonials
 import testimonials from "./data/testimonials.js";
@@ -37,11 +38,7 @@ import { Testimonial } from "./components/testimonials/Testimonial.js";
 import { focusOnHero } from "./components/hireMe/hireMe.js"
 focusOnHero();
 /* <----- my portfolio -----> */
-new renderGallery({
-    selector: '#portfolioGallery',
-    data: gallery,
-    imagesDirectory: './img/portfolioImg/'
-});
+new renderGallery(portfolioData);
 
 /* <----- testimonials -----> */
 
