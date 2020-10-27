@@ -14,7 +14,7 @@ const blogsData = {
         {
             id: 2,
             img: 'blog-2',
-            imagesPath:'../img/Blog/blog-2.jpg',
+            imagesPath:'./img/Blog/blog-2.jpg',
             date: '02 Mar 2019 | Design',
             linkYours: 'Make your Marketing website',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -24,7 +24,7 @@ const blogsData = {
         {
             id: 3,
             img: 'blog-3',
-            imagesPath:'../img/Blog/blog-3.jpg',
+            imagesPath:'./img/Blog/blog-3.jpg',
             date: '02 Mar 2019 | Design',
             linkYours: 'Make your Marketing website',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
