@@ -1,6 +1,6 @@
 const portfolioData = {
     selector: '#portfolioGallery',
-    imgPath: './img/portfolioImg/',
+    imgPath: './img/PortfolioImg/',
     defaultImg: 'plus.png',
     data: [
         {
