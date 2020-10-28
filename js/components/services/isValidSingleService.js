@@ -1,3 +1,4 @@
+
 function dataCheck(data) {
 
     let badArray = [];
@@ -24,8 +25,8 @@ function dataCheck(data) {
             badArray.push(service.id);
         }
     };
-    
-    return badArray;
+
+    return console.log(badArray);
 };
 
 export { dataCheck };

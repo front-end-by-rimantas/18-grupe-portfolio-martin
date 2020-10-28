@@ -7,8 +7,8 @@ const services = [
     },
     {
         id: 2,
-        icon: 'fas fa-flag',
-        heading: 823874,
+        icon: 'fa fa-flag',
+        heading: 'Logo & Identity',
         text: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.',
     },
     {   
@@ -19,7 +19,7 @@ const services = [
     },
     {
         id: 4,
-        icon: false,
+        icon: 'fa fa-mobile',
         heading: 'Fully Responsive',
         text: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.',
     },

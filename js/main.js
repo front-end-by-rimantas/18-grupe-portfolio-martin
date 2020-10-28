@@ -95,7 +95,6 @@ import data from './data/services.js';
 import { renderServices } from './components/services/renderServices.js';
 const { services } = data;
 import { dataCheck } from './components/services/isValidSingleService.js';
-
 dataCheck(services);
 renderServices('#generate-services', services);
 
