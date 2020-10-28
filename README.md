@@ -10,7 +10,7 @@ This project is for educational purposes only. Pull requests are welcome, but pr
 
 Site published at https://front-end-by-rimantas.github.io/18-grupe-portfolio-martin/
 
-Design: [Martin portfolio template](https://http://inventheme.com/themeforest/martin/index.html)
+Design: [Martin portfolio template](https://inventheme.com/themeforest/martin/index.html)
 
 ## Project features
 
