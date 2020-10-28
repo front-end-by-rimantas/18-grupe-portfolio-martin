@@ -204,7 +204,7 @@ header {
   flex-flow: column;
   justify-content: center;
   align-content: space-between;
-  background-image: url('../img/home.jpg');
+  background-image: url("../img/home.jpg");
   background-size: cover;
   height: 100vh;
   margin-top: -71px;
