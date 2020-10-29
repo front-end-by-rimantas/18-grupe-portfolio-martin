@@ -14,7 +14,6 @@ function renderHeaderEvents(header) {
     });
     //izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
     bodyDOM.addEventListener('click', () => {
-        console.log('asfdg');
         menuDOM.classList.remove('show');
     });
 
