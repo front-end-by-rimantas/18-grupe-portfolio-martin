@@ -4,27 +4,27 @@ function renderHeaderEvents(header) {
     const menuDOM = document.querySelector('body .menu');
     const bodyDOM = document.querySelector('main');
 
-burgerDOM.addEventListener('click', () => {
+    burgerDOM.addEventListener('click', () => {
         //susirandame artimiausia tevini elementa div
-  
-            menuDOM.classList.toggle('show');
+
+        menuDOM.classList.toggle('show');
         //uzsideda ant burger icon spalva
-            burgerDOM.classList.add('new');
+        burgerDOM.classList.add('new');
 
     });
-//izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
+    //izjungiame burger icon pakeitimus paspaudus visur, isskyrus button
     bodyDOM.addEventListener('click', () => {
-    burgerDOM.classList.remove('new');
-    
+        console.log('asfdg');
+        menuDOM.classList.remove('show');
     });
 
-/* kai scrolini pasikeicia header fonas */
+    /* kai scrolini pasikeicia header fonas */
     const activDOM = document.querySelector('.header');
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction(){
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             activDOM.classList.add("active");
-        } else{
+        } else {
             activDOM.classList.remove("active");
         }
     };
