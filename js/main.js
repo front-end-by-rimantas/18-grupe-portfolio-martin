@@ -18,7 +18,7 @@ import { renderResume } from '../js/components/resume/renderResume.js';
 //portfolio import
 
 import { portfolioData } from './data/gallery.js';
-import { renderGallery } from './components/gallery/renderGallery.js'; 
+import { renderGallery } from './components/gallery/renderGallery.js';
 
 //testimonials
 import testimonials from "./data/testimonials.js";
@@ -45,8 +45,7 @@ renderServices('#generate-services', services);
 /* <----- my resume -----> */
 
 /* <----- hire me -----> */
-import { focusOnHero } from "./components/hireMe/hireMe.js"
-focusOnHero();
+import { focusOnHero } from "./components/hireMe/hireMe.js";
 /* <----- my portfolio -----> */
 new renderGallery(portfolioData);
 
@@ -83,13 +82,13 @@ contactFormValidationEvent();
 
 
 // header
-renderMeniu('.header .menu-main-h',header);
-renderMobMeniu('body .menu-mob-h',header);
+renderMeniu('.header .menu-main-h', header);
+renderMobMeniu('body .menu-mob-h', header);
 renderHeaderEvents(header);
 //resume
 renderResume('.resume .resume-grid', resume);
 // hireMe
-focusOnHero(); 
+focusOnHero();
 
 //testimonials
 new Testimonial(testimonials);
